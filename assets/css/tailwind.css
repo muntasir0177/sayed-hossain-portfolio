@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+
+@font-face {
+    font-family: "Clash Grotesk Bold";
+    src:
+        url("../fonts/ClashGrotesk-Bold.woff2") format("woff2"),
+        url("../fonts/ClashGrotesk-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Clash Grotesk Medium";
+    src:
+        url("../fonts/ClashGrotesk-Medium.woff2") format("woff2"),
+        url("../fonts/ClashGrotesk-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Clash Grotesk Regular";
+    src:
+        url("../fonts/ClashGrotesk-Regular.woff2") format("woff2"),
+        url("../fonts/ClashGrotesk-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Clash Grotesk Semibold";
+    src:
+        url("../fonts/ClashGrotesk-Semibold.woff2") format("woff2"),
+        url("../fonts/ClashGrotesk-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-clash-grotesk-bold: "Clash Grotesk Bold";
+    --font-clash-grotesk-medium: "Clash Grotesk Medium";
+    --font-clash-grotesk-semi-bold: "Clash Grotesk Semibold";
+    --font-clash-grotesk-regular: "Clash Grotesk Regular";
+    --font-anton-sc: "Anton SC", sans-serif;
+}
+
+body {
+    font-family: var(--font-clash-grotesk-regular);
+    background-color: #111;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    margin: 8px;
+}
+
+.nav-container {
+    max-width: 1142px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+}
+
+.brand-img-wrapper {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.brand-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.brand-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.desktop-menu {
+    display: none;
+    list-style: none;
+    gap: 2.5rem;
+    align-items: center;
+}
+.nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.ham-line {
+    width: 1.5rem;
+    height: 2px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+.ham-short {
+    width: 1rem;
+    margin-left: auto;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 72px;
+    left: 8px;
+    right: 8px;
+    background-color: #8636cc;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 8px;
+    z-index: 40;
+}
+.mobile-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+.border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 0 11.25rem;
+        margin: 16px;
+    }
+    .desktop-menu {
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }
+    .mobile-menu {
+        display: none !important;
+    }
+}

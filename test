@@ -1,0 +1,168 @@
+Clash Grotesk
+400 - regular
+500 - medium
+600 - semi bold
+
+
+antony sc
+
+
+
+
+
+<!-- <section class="py-10 md:py-37 bg-[#0A0A0A]">
+        <div class="container mx-auto px-4 md:px-0">
+            <div class="grid grid-cols-12 gap-8 items-start">
+
+                <div class="col-span-12 lg:col-span-5">
+                    <h2
+                        class="font-anton-sc text-[#FF7A3B] text-[34px] md:text-[24px] font-black leading-[0.9] uppercase mb-6">
+                        MY SERVICES
+                    </h2>
+                    <p class="text-[36px] md:text-[48px] text-[#FFF] leading-tight">
+                        Design solutions for static graphics and motion content.
+                    </p>
+                </div>
+
+                <div class="col-span-12 lg:col-span-7 space-y-4">
+
+                    <div class="max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)]"
+                        open>
+
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <div class="flex-1">
+                                <h3 class="text-white text-[32px] font-anton-sc uppercase mb-2">Graphic Design Mastery
+                                </h3>
+                                <p class="text-gray-400 mb-8 text-[20px]">Expert in creating compelling visual
+                                    identities
+                                    and marketing materials</p>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Branding</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Packaging</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Flyers</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Infographic</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Posters</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Presentation</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Media Kit
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-full md:w-[228px] shrink-0">
+                                <img src="assets/images/graphic-image1.png" alt="Infinite Railway"
+                                    class="w-full h-auto object-cover rounded-xl border border-[#333]">
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <a href="#"
+                                class="cursor-pointer border border-[#444] text-white px-8 py-3 rounded-full text-[16px] uppercase flex items-center gap-3 transition-all group">
+                                Learn More
+                                <img src="assets/images/arrow-icon.svg" class="text-[#444] aspect-square">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)]">
+
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <div class="flex-1">
+                                <h3 class="text-white text-[32px] font-anton-sc uppercase mb-2">Motion Graphics
+                                    Excellence
+                                </h3>
+                                <p class="text-gray-400 mb-8 text-[20px]">Specialized in creating engaging animated
+                                    content and video production</p>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4">Explainer Videos</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Reels</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Promo Videos</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Brand Intro</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Motion Graphics</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Video Ads
+                                    </div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Company Profile Video
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-full md:w-[228px] shrink-0">
+                                <img src="assets/images/graphic-image2.png" alt="Infinite Railway"
+                                    class="w-full h-auto object-cover rounded-xl border border-[#333]">
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <a href="#"
+                                class="cursor-pointer border border-[#444] text-white px-8 py-3 rounded-full text-sm uppercase flex items-center gap-3 transition-all group">
+                                Learn More
+                                <img src="assets/images/arrow-icon.svg" class="text-[#444] aspect-square">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)]">
+
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <div class="flex-1">
+                                <h3 class="text-white text-[32px] font-anton-sc uppercase mb-2">Photoshop Mastery in
+                                    photo manipulation
+                                </h3>
+                                <p class="text-gray-400 mb-8 text-[20px]">Expert in creating compelling visual
+                                    identities
+                                    and marketing materials</p>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Branding</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Packaging</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Flyers</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Infographic</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Posters</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Presentation</div>
+                                    <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                            src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Media Kit
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-full md:w-[228px] shrink-0">
+                                <img src="assets/images/graphic-image3.png" alt="Infinite Railway"
+                                    class="w-full h-auto object-cover rounded-xl border border-[#333]">
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <a href="#"
+                                class="cursor-pointer border border-[#444] text-white px-8 py-3 rounded-full text-sm uppercase flex items-center gap-3 transition-all group">
+                                Learn More
+                                <img src="assets/images/arrow-icon.svg" class="text-[#444] aspect-square">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayed Hossain</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+</head>
+
+<body>
+
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <div class="brand-img-wrapper">
+                    <img src="assets/images/nav-img.png" alt="Rafiqul Islam" class="brand-img" />
+                </div>
+                <span class="brand-name">Sayed Hossain</span>
+            </a>
+
+            <div class="nav-actions">
+                <ul class="desktop-menu">
+                    <li><a href="project.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Projects</a></li>
+                    <li><a href="#" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link">Download CV</a></li>
+                </ul>
+
+                <button id="hamburger" class="hamburger">
+                    <span id="ham1" class="ham-line"></span>
+                    <span id="ham2" class="ham-line"></span>
+                    <span id="ham3" class="ham-line ham-short"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="project.html" class="mobile-link border-bottom">Home</a>
+        <a href="#" class="mobile-link border-bottom">Projects</a>
+        <a href="#" class="mobile-link">Services</a>
+        <a href="#" class="mobile-link">Download CV</a>
+    </div>
+
+    <section class="bg-black pt-[100px] text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+                <div class="lg:col-span-5">
+                    <img src="assets/images/profile-img.png" alt="Sayed Hossain"
+                        class="rounded-2xl w-full h-auto object-cover aspect-[4/5]">
+                </div>
+
+                <div class="lg:col-span-7 flex flex-col gap-6">
+                    <p
+                        class="bg-[linear-gradient(180deg,#FAFAF6_0%,#FBE6E2_50%,#FAFAF6_100%)] bg-clip-text text-transparent text-lg ">
+                        Hi, I’m <span class="text-[#FFF]">Sayed
+                            Hossain</span>
+                    </p>
+
+                    <h1
+                        class="bg-[linear-gradient(180deg,#FAFAF6_0%,#FBE6E2_50%,#FAFAF6_100%)] bg-clip-text text-transparent text-[80px] md:text-[120px] font-anton-sc leading-[0.9] uppercase">
+                        GRA<span class="text-gray-600">&nbsp; &nbsp;</span>PHIC <br>
+                        & <br>
+                        MOTION DESIGNER
+                    </h1>
+
+                    <div class="flex items-start gap-12 my-2">
+                        <p
+                            class="text-[32px] bg-[linear-gradient(180deg,#FAFAF6_0%,#FBE6E2_50%,#FAFAF6_100%)] bg-clip-text text-transparent max-w-[280px]">
+                            Transforming <span class="text-white/80 font-medium">ideas</span> into iconic <span
+                                class="text-[#FFF] font-medium">brands</span>
+                        </p>
+                        <div class="text-[#FFF] font-medium text-[48px] mt-1">(2026)</div>
+                    </div>
+
+                    <div class="flex items-center gap-6 mt-2 justify-between">
+                        <div class="flex gap-3">
+                            <div
+                                class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 rounded-xl flex items-center justify-center">
+                                <img src="assets/images/hero-icon1.svg" alt="After Effects" class="w-6 h-6">
+                            </div>
+                            <div
+                                class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 rounded-xl flex items-center justify-center">
+                                <img src="assets/images/hero-icon2.svg" alt="Illustrator" class="w-6 h-6">
+                            </div>
+                            <div
+                                class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 rounded-xl flex items-center justify-center">
+                                <img src="assets/images/hero-icon3.svg" alt="Premiere Pro" class="w-6 h-6">
+                            </div>
+                        </div>
+                        <button
+                            class="px-8 py-4 rounded-full border-2 border-[#272727] bg-[linear-gradient(270deg,#095C5C_0%,#958135_44.71%,#FF7A3B_100%)] text-white font-semibold flex items-center gap-2 transition-all hover:opacity-90">
+                            See My Works →
+                        </button>
+                    </div>
+
+                    <div
+                        class="hidden md:flex bg-[#111111] border border-gray-800 p-2 rounded-2xl flex gap-6 mt-4 items-center">
+                        <div class="w-48 h-28 bg-gray-800 rounded-lg flex-shrink-0">
+                            <img src="assets/images/video-thumb.png" alt="Featured Project"
+                                class="w-full h-full aspect-[4/5] object-cover">
+                        </div>
+                        <p class="text-gray-400 text-md leading-relaxed">
+                            <span class="text-white font-bold block mb-1">Bringing brands to life</span>
+                            with innovative design and motion. Transforming ideas into engaging visual stories.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-[46px] md:py-[130px] px-4 md:px-0">
+        <div class="container mx-auto">
+            <div class="justify-center mx-auto mb-12 overflow-hidden rounded-[20px] shadow-sm relative group md:p-0"
+                id="video-container">
+                <img src="assets/images/video-thumb.png" alt="Featured Project" class="w-full h-auto block"
+                    id="video-thumbnail">
+
+                <button onclick="playVideo()"
+                    class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all duration-300"
+                    id="play-button">
+                    <div
+                        class="w-full max-w-[45px] rounded-full flex items-center justify-center shadow-xl transform group-hover:scale-102 transition-transform cursor-pointer">
+                        <img class="w-full aspect-45/45" src="assets/images/home-img7.svg" alt="Play Icon">
+                    </div>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class=" py-8 px-10 overflow-hidden m-[8px] md:m-[16px] rounded-[16px]">
+        <div class=" max-w-[1142px] mx-auto py-[20px] md:py-[88px]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+
+                <div class="flex flex-col items-center justify-center p-8 
+            rounded-[16px] 
+            bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
+            shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
+
+                    <div class="flex items-baseline text-[#FF6B2C]">
+                        <h2 class="counter text-[48px] md:text-[40px] font-anton-sc leading-none" data-target="150">0
+                        </h2>
+                        <span class="text-[48px] md:text-[40px] font-anton-sc leading-none">+</span>
+                    </div>
+
+                    <p class="text-[16px] md:text-[20px] font-medium text-white opacity-90 mt-2">
+                        Projects Completed
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center justify-center p-8 
+            rounded-[16px] 
+            bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
+            shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
+
+                    <div class="flex items-baseline text-[#FF6B2C]">
+                        <h2 class="counter text-[48px] md:text-[40px] font-anton-sc leading-none" data-target="140">0
+                        </h2>
+                        <span class="text-[48px] md:text-[40px] font-anton-sc leading-none">+</span>
+                    </div>
+
+                    <p class="text-[16px] md:text-[20px] font-medium text-white opacity-90 mt-2">
+                        Happy Clients
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center justify-center p-8 
+            rounded-[16px] 
+            bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
+            shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
+
+                    <div class="flex items-baseline text-[#FF6B2C]">
+                        <h2 class="counter text-[48px] md:text-[40px] font-anton-sc leading-none" data-target="6">0
+                        </h2>
+                        <span class="text-[48px] md:text-[40px] font-anton-sc leading-none">+</span>
+                    </div>
+
+                    <p class="text-[16px] md:text-[20px] font-medium text-white opacity-90 mt-2">
+                        Years Experience
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="py-10 md:py-37 bg-[#0A0A0A]">
+        <div class="container mx-auto px-4 md:px-0">
+            <div class="grid grid-cols-12 gap-8 items-start">
+
+                <div class="col-span-12 lg:col-span-5">
+                    <h2
+                        class="font-anton-sc text-[#FF7A3B] text-[34px] md:text-[24px] font-black leading-[0.9] uppercase mb-6">
+                        MY SERVICES
+                    </h2>
+                    <p class="text-[36px] md:text-[48px] text-[#FFF] leading-tight">
+                        Design solutions for static graphics and motion content.
+                    </p>
+                </div>
+
+                <div class="col-span-12 lg:col-span-7 space-y-4" id="accordion-container">
+
+                    <div
+                        class="accordion-item max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] transition-all duration-300 cursor-pointer">
+
+                        <div class="flex flex-col">
+                            <h3 class="text-white text-[32px] font-anton-sc uppercase">Graphic Design Mastery</h3>
+                            <p class="text-gray-400 text-[20px]">Expert in creating compelling visual identities and
+                                marketing materials</p>
+
+
+                            <div class="accordion-content overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                                    <div class="flex-1">
+                                        <div class="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4">
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Branding
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Packaging
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Flyers</div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Infographic
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Posters</div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Presentation
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Media
+                                                Kit
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full md:w-[228px] shrink-0">
+                                        <img src="assets/images/graphic-image1.png" alt="Graphic Design"
+                                            class="w-full h-auto object-cover rounded-xl border border-[#333]">
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-end mt-6">
+                                    <a href="#"
+                                        class="border border-[#444] text-white px-8 py-3 rounded-full text-[16px] uppercase flex items-center gap-3">
+                                        Learn More <img src="assets/images/arrow-icon.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="accordion-item max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] cursor-pointer transition-all duration-300">
+
+                        <div class="flex flex-col">
+                            <h3 class="text-white text-[32px] font-anton-sc uppercase">Motion Graphics Excellence</h3>
+                            <p class="text-gray-400 mb-4 text-[20px]">Specialized in creating engaging animated
+                                content and video production</p>
+
+
+                            <div
+                                class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                                    <div class="flex-1">
+                                        <div class="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4">
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Explainer
+                                                Videos
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Reels
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Promo Videos
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Brand Intro
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Motion
+                                                Graphics</div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Video
+                                                Ads
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Company
+                                                Profile Video
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-[228px] shrink-0">
+                                        <img src="assets/images/graphic-image2.png" alt="Motion"
+                                            class="w-full h-auto object-cover rounded-xl border border-[#333]">
+                                    </div>
+                                </div>
+                                <div class="flex justify-end mt-6">
+                                    <a href="#"
+                                        class="border border-[#444] text-white px-8 py-3 rounded-full text-sm uppercase flex items-center gap-3">Learn
+                                        More <img src="assets/images/arrow-icon.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="accordion-item max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] cursor-pointer transition-all duration-300">
+
+                        <div class="flex flex-col">
+                            <h3 class="text-white text-[32px] font-anton-sc uppercase">Photoshop Mastery in photo
+                                manipulation</h3>
+                            <p class="text-gray-400 mb-4 text-[20px]">Expert in crafting captivating visuals and
+                                high-quality production using Photoshop.</p>
+
+
+                            <div
+                                class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                                    <div class="flex-1">
+                                        <div class="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4">
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Branding
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Packaging
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Flyers</div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Infographic
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Posters</div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Presentation
+                                            </div>
+                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Media
+                                                Kit
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-[228px] shrink-0">
+                                        <img src="assets/images/graphic-image3.png" alt="Photoshop"
+                                            class="w-full h-auto object-cover rounded-xl border border-[#333]">
+                                    </div>
+                                </div>
+                                <div class="flex justify-end mt-6">
+                                    <a href="#"
+                                        class="border border-[#444] text-white px-8 py-3 rounded-full text-sm uppercase flex items-center gap-3">Learn
+                                        More <img src="assets/images/arrow-icon.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Graphic Design -->
+    <section class="bg-[#121212] py-12">
+        <div class="container mx-auto px-4">
+            <div class="mb-12 text-center">
+                <h3 class="text-orange-500 font-anton-sc uppercase text-[24px] mb-2">My Graphics Work</h3>
+                <h2 class="text-white text-[48px]">Designed Projects, Real Impact</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="space-y-4">
+                    <div class="text-gray-500 text-[40px] justify-self-end">01</div>
+                    <img src="assets/images/graphic-image3.png" alt="Burger Poster Design"
+                        class="w-full h-auto rounded-lg">
+                    <div class="text-white font-anton-sc text-[24px]">POSTER DESIGN</div>
+                    <div class="text-gray-400 text-[16px]">(2026)</div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="text-gray-500 text-[40px] justify-self-end">02</div>
+                    <img src="assets/images/work-img1.png" alt="Chai Ritual Logo" class="w-full h-auto rounded-lg">
+                    <div class="text-white font-anton-sc text-[24px]">LOGO DESIGN</div>
+                    <div class="text-gray-400 text-[16px]">(2026)</div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="text-gray-500 text-[40px] justify-self-end">03</div>
+                    <img src="assets/images/work-img2.png" alt="Spaghetti Poster Design"
+                        class="w-full h-auto rounded-lg">
+                    <div class="text-white font-anton-sc text-[24px]">FOOD POSTER DESIGN</div>
+                    <div class="text-gray-400 text-[16px]">(2026)</div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="text-gray-500 text-[40px] justify-self-end">04</div>
+                    <img src="assets/images/work-img3.png" alt="Cover Design" class="w-full h-auto rounded-lg">
+                    <div class="text-white font-anton-sc text-[24px]">COVER DESIGN</div>
+                    <div class="text-gray-400 text-[16px]">(2026)</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Motion Design Works -->
+
+    <section class="bg-[#1a1a1a] py-[46px] md:py-[130px] px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h4 class="text-orange-500 font-semibold tracking-widest uppercase text-sm mb-2">My Motion Works</h4>
+                <h2 class="text-white text-4xl md:text-5xl font-bold">Moving Brands with Motions</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="relative group rounded-[20px] overflow-hidden bg-gray-800 max-w-[864px]">
+                    <img src="assets/images/motion-vdo-img1.png" alt="Corporate" class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-6 text-white text-xl font-medium">Corporate Videos</div>
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
+                        <div
+                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                            <div
+                                class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="relative group rounded-[20px] overflow-hidden bg-gray-800 max-w-[408px]">
+                    <img src="assets/images/motion-vdo-img2.png" alt="Travel" class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-6 text-white text-xl font-medium">Travel Videos</div>
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
+                        <div
+                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                            <div
+                                class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="relative group rounded-[20px] overflow-hidden bg-gray-800 lg:row-span-2 max-w-[424px]">
+                    <img src="assets/images/motion-vdo-img3.png" alt="3D" class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-6 text-white text-xl font-medium">3D Motion Videos</div>
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
+                        <div
+                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                            <div
+                                class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="relative group rounded-[20px] overflow-hidden bg-gray-800 max-w-[636px]">
+                    <img src="assets/images/motion-vdo-img4.png" alt="Social" class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-6 text-white text-xl font-medium">Social Ad Videos</div>
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
+                        <div
+                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                            <div
+                                class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="relative group rounded-[20px] overflow-hidden bg-gray-800 max-w-[636px]">
+                    <img src="assets/images/motion-vdo-img5.png" alt="Product" class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-6 text-white text-xl font-medium">Product Videos</div>
+                    <button
+                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
+                        <div
+                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                            <div
+                                class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div
+                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 hidden lg:flex items-center justify-center w-28 h-28 border border-white/20 rounded-full cursor-pointer hover:bg-white hover:text-black transition-all">
+                    <span class="text-white font-bold text-xs uppercase tracking-widest">See Work</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-[#121212] text-white py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-orange-500 font-bold tracking-widest text-sm uppercase mb-2">My Creative Process</h2>
+                <p class="text-3xl md:text-4xl lg:text-5xl font-light leading-tight text-gray-200">
+                    A systematic approach to delivering <span class="text-gray-500">exceptional design and motion
+                        work</span>
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-12">
+
+                <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 border-l-4 border-orange-500 pl-6">
+                    <div class="flex items-baseline gap-4 md:w-1/3">
+                        <span class="text-xl md:text-2xl font-mono text-gray-500">(01)</span>
+                        <h3 class="text-4xl md:text-5xl font-bold text-gray-200">DISCOVERY</h3>
+                    </div>
+                    <p class="text-gray-400 md:w-2/3 text-lg">Understanding your brand, goals, and target audience to
+                        create a strategic foundation.</p>
+                </div>
+
+                <div
+                    class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 border-l-4 border-transparent pl-6">
+                    <div class="flex items-baseline gap-4 md:w-1/3">
+                        <span class="text-xl md:text-2xl font-mono text-gray-500">(02)</span>
+                        <h3 class="text-4xl md:text-5xl font-bold text-gray-600">CONCEPT</h3>
+                    </div>
+                    <p class="text-gray-600 md:w-2/3 text-lg">Developing creative concepts and mood boards that align
+                        with your vision and objectives.</p>
+                </div>
+
+                <div
+                    class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 border-l-4 border-transparent pl-6">
+                    <div class="flex items-baseline gap-4 md:w-1/3">
+                        <span class="text-xl md:text-2xl font-mono text-gray-500">(03)</span>
+                        <h3 class="text-4xl md:text-5xl font-bold text-gray-600">CREATION</h3>
+                    </div>
+                    <p class="text-gray-600 md:w-2/3 text-lg">Bringing concepts to life through design, animation, and
+                        meticulous attention to detail.</p>
+                </div>
+
+                <div
+                    class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 border-l-4 border-transparent pl-6">
+                    <div class="flex items-baseline gap-4 md:w-1/3">
+                        <span class="text-xl md:text-2xl font-mono text-gray-500">(04)</span>
+                        <h3 class="text-4xl md:text-5xl font-bold text-gray-600">DELIVERY</h3>
+                    </div>
+                    <p class="text-gray-600 md:w-2/3 text-lg">Final refinements, optimization for all platforms, and
+                        seamless handoff of deliverables.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="bg-[#0a0a0a] py-20 px-6">
+        <div class="container mx-auto">
+            <div
+                class="relative overflow-hidden rounded-[2rem] bg-gradient-to-b from-[#d95d1e] to-[#6b2e0f] px-8 py-16 md:py-24 text-center shadow-2xl">
+
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                        Not limited to video,<br>
+                        I'm your creative comrade.
+                    </h2>
+
+                    <p class="text-gray-200 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto opacity-90">
+                        Got questions, project ideas, or just want to say hi? I'm all ears!
+                    </p>
+
+                    <button
+                        class="group relative inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-[#e97b41] to-[#1e6b5a] border border-white/30 text-white font-medium">
+                        Get Started
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div
+                    class="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.4)_100%)]">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
