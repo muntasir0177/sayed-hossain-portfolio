@@ -65,12 +65,12 @@ body {
     left: 0;
     right: 0;
     z-index: 50;
-    margin: 8px;
+    /* margin: 8px; */
 }
 
 .nav-container {
     max-width: 1142px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(54, 52, 52, 0.705);
     margin: 0 auto;
     padding: 12px;
     display: flex;
@@ -142,7 +142,7 @@ body {
     top: 72px;
     left: 8px;
     right: 8px;
-    background-color: #8636cc;
+    background-color: rgba(54, 52, 52, 0.705);
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -161,7 +161,8 @@ body {
 
 @media (min-width: 768px) {
     .navbar {
-        padding: 0 11.25rem;
+        /* Keep desktop look, avoid overflow on small tablets */
+        padding: 0 clamp(1rem, 4vw, 11.25rem);
         margin: 16px;
     }
     .desktop-menu {
@@ -173,4 +174,193 @@ body {
     .mobile-menu {
         display: none !important;
     }
+}
+
+.creative-process {
+    background:
+        linear-gradient(180deg, #575757 0%, rgba(0, 5, 20, 0) 100%),
+        rgba(255, 255, 255, 0.01);
+}
+
+/* .main-footer {
+    background: url("assets/images/footer.svg") no-repeat center center fixed;
+    background-size: cover;
+} */
+
+:root {
+    --bg-gradient: linear-gradient(180deg, #110c0a 0%, #3d1b02 100%);
+    --pill-bg: #1a1a1a;
+    --orange: #ff5f00;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 100px 0;
+    background: linear-gradient(0deg, #552d1a 0%, #111 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* বড় টেক্সট স্টাইল */
+.hero-text {
+    font-family: "Anton SC";
+    font-size: 256px;
+    color: #fff;
+    line-height: 1;
+    /* text-transform: uppercase; */
+    letter-spacing: -1px;
+    white-space: nowrap;
+    user-select: none;
+}
+
+/* সেই বাঁকানো কালো পিল/ক্যাপসুল */
+.design-pill {
+    position: absolute;
+    background: #111;
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: 1px solid #333;
+    transform: rotate(-11.278deg);
+    /* ছবির মতো বাঁকানো */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pill-text {
+    color: #ff7a3b;
+    font-family: "Anton SC", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* লিঙ্কগুলোর পজিশন (ডেক্সটপে উপরে ডানদিকে) */
+.footer-nav {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+/* --- Responsive (Mobile) --- */
+@media (max-width: 1024px) {
+    .hero-text {
+        font-size: 100px;
+    }
+
+    .pill-text {
+        font-size: 14px;
+    }
+
+    .footer-nav {
+        top: -80px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        height: 250px;
+        /* padding: 10px 0; */
+    }
+
+    .hero-text {
+        font-size: 80px;
+    }
+
+    .design-pill {
+        padding: 8px 16px;
+        transform: rotate(-10deg);
+        /* width: 150px; */
+        font-size: 10px;
+    }
+
+    .pill-text {
+        font-size: 10px;
+    }
+
+    .footer-nav {
+        top: auto;
+        bottom: -80px;
+        right: auto;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* Extra-small devices: prevent footer text overflow while keeping single-line style */
+@media (max-width: 420px) {
+    .footer-container {
+        padding: 72px 0;
+    }
+    .hero-text {
+        font-size: 44px;
+        letter-spacing: -0.5px;
+    }
+    .footer-nav {
+        flex-wrap: wrap;
+        padding: 0 16px;
+        row-gap: 10px;
+    }
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.accordion-item.open .accordion-content {
+    max-height: 600px;
+}
+
+/* Hide default splide arrows and dots */
+#splide1 .splide__arrows,
+#splide1 .splide__pagination,
+#splide2 .splide__arrows,
+#splide2 .splide__pagination {
+    display: none !important;
+}
+
+/* Add left padding on each slide so avatar doesn't get clipped */
+#splide1 .splide__slide,
+#splide2 .splide__slide {
+    padding: 10px 0 10px 20px;
+}
+
+/* scrollbar-hide  */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

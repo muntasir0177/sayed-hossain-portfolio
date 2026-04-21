@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayed Hossain</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+
 </head>
 
 <body>
@@ -23,8 +25,8 @@
 
             <div class="nav-actions">
                 <ul class="desktop-menu">
-                    <li><a href="project.html" class="nav-link">Home</a></li>
-                    <li><a href="#" class="nav-link">Projects</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
                     <li><a href="#" class="nav-link">Services</a></li>
                     <li><a href="#" class="nav-link">Download CV</a></li>
                 </ul>
@@ -39,84 +41,92 @@
     </nav>
 
     <div id="mobile-menu" class="mobile-menu hidden">
-        <a href="project.html" class="mobile-link border-bottom">Home</a>
-        <a href="#" class="mobile-link border-bottom">Projects</a>
+        <a href="index.html" class="mobile-link border-bottom">Home</a>
+        <a href="projects.html" class="mobile-link border-bottom">Projects</a>
         <a href="#" class="mobile-link">Services</a>
         <a href="#" class="mobile-link">Download CV</a>
     </div>
 
-    <section class="bg-black pt-[100px] text-white">
-        <div class="container mx-auto px-4 py-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+    <section class="pt-[60px] md:pt-[100px] text-[#FFF]">
+        <div class="container mx-auto px-4 md:px-12 lg:px-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
 
-                <div class="lg:col-span-5">
+                <div class="lg:col-span-5 order-1 lg:order-1">
                     <img src="assets/images/profile-img.png" alt="Sayed Hossain"
                         class="rounded-2xl w-full h-auto object-cover aspect-[4/5]">
                 </div>
 
-                <div class="lg:col-span-7 flex flex-col gap-6">
+                <div class="lg:col-span-7 flex flex-col gap-4 lg:gap-6 order-2 lg:order-2">
                     <p
-                        class="bg-[linear-gradient(180deg,#FAFAF6_0%,#FBE6E2_50%,#FAFAF6_100%)] bg-clip-text text-transparent text-lg ">
-                        Hi, I’m <span class="text-[#FFF]">Sayed
-                            Hossain</span>
+                        class="bg-[linear-gradient(180deg,#FAFAF6_0%,#FBE6E2_50%,#FAFAF6_100%)] bg-clip-text text-transparent text-lg">
+                        Hi, I’m <span class="text-[#FFF]">Sayed Hossain</span>
                     </p>
 
                     <h1
-                        class="bg-[linear-gradient(180deg,#FAFAF6_0%,#FBE6E2_50%,#FAFAF6_100%)] bg-clip-text text-transparent text-[80px] md:text-[120px] font-anton-sc leading-[0.9] uppercase">
-                        GRA<span class="text-gray-600">&nbsp; &nbsp;</span>PHIC <br>
-                        & <br>
+                        class="bg-[linear-gradient(180deg,#FAFAF6_0%,#FBE6E2_50%,#FAFAF6_100%)] bg-clip-text text-transparent text-[40px] md:text-[100px] lg:text-[120px] font-anton-sc leading-[0.9]">
+                        GRA<span class="text-gray-600">&nbsp;&nbsp;</span>PHIC <br>& <br>
                         MOTION DESIGNER
                     </h1>
 
-                    <div class="flex items-start gap-12 my-2">
+                    <div class="flex flex-wrap items-center gap-0 md:gap-6 my-0 md:my-2">
                         <p
-                            class="text-[32px] bg-[linear-gradient(180deg,#FAFAF6_0%,#FBE6E2_50%,#FAFAF6_100%)] bg-clip-text text-transparent max-w-[280px]">
+                            class="text-[16px] md:text-[32px] bg-[linear-gradient(180deg,#FAFAF6_0%,#FBE6E2_50%,#FAFAF6_100%)] bg-clip-text text-transparent w-full md:max-w-[280px]">
                             Transforming <span class="text-white/80 font-medium">ideas</span> into iconic <span
                                 class="text-[#FFF] font-medium">brands</span>
                         </p>
-                        <div class="text-[#FFF] font-medium text-[48px] mt-1">(2026)</div>
+                        <div class="text-[#FFF] font-medium text-[16px] md:text-[48px]">(2026)</div>
                     </div>
 
-                    <div class="flex items-center gap-6 mt-2 justify-between">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-2 justify-between">
                         <div class="flex gap-3">
-                            <div
-                                class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 rounded-xl flex items-center justify-center">
-                                <img src="assets/images/hero-icon1.svg" alt="After Effects" class="w-6 h-6">
+                            <div class="w-full flex items-center justify-center overflow-visible py-2">
+                                <div class="filter drop-shadow-[0px_10px_15px_rgba(56,189,248,0.6)]"> <img
+                                        src="assets/images/hero-icon1.svg" alt="After Effects"
+                                        class="w-fullaspect-square object-cover">
+                                </div>
                             </div>
-                            <div
-                                class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 rounded-xl flex items-center justify-center">
-                                <img src="assets/images/hero-icon2.svg" alt="Illustrator" class="w-6 h-6">
+                            <div class="w-full flex items-center justify-center overflow-visible py-2">
+                                <div class="filter drop-shadow-[0px_10px_15px_rgba(56,189,248,0.6)]"> <img
+                                        src="assets/images/hero-icon2.svg" alt="After Effects"
+                                        class="w-fullaspect-square object-cover">
+                                </div>
                             </div>
-                            <div
-                                class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 rounded-xl flex items-center justify-center">
-                                <img src="assets/images/hero-icon3.svg" alt="Premiere Pro" class="w-6 h-6">
+                            <div class="w-full flex items-center justify-center overflow-visible py-2">
+                                <div class="filter drop-shadow-[0px_10px_15px_rgba(56,189,248,0.6)]"> <img
+                                        src="assets/images/hero-icon3.svg" alt="After Effects"
+                                        class="w-fullaspect-square object-cover">
+                                </div>
                             </div>
                         </div>
                         <button
-                            class="px-8 py-4 rounded-full border-2 border-[#272727] bg-[linear-gradient(270deg,#095C5C_0%,#958135_44.71%,#FF7A3B_100%)] text-white font-semibold flex items-center gap-2 transition-all hover:opacity-90">
-                            See My Works →
+                            class="group flex items-center gap-3 px-8 py-3 rounded-full text-white text-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95 bg-[linear-gradient(90deg,#ea8a46_0%,#2f7365_100%)] border-2 border-[#5a4b42]">
+                            See My Works
+                            <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
                         </button>
                     </div>
 
                     <div
-                        class="hidden md:flex bg-[#111111] border border-gray-800 p-2 rounded-2xl flex gap-6 mt-4 items-center">
-                        <div class="w-48 h-28 bg-gray-800 rounded-lg flex-shrink-0">
+                        class="flex flex-col sm:flex-row bg-[#111111] border border-gray-800 p-3 rounded-2xl gap-4 mt-4 items-center">
+                        <div class="w-full sm:w-48 h-32 sm:h-28 bg-gray-800 rounded-lg flex-shrink-0">
                             <img src="assets/images/video-thumb.png" alt="Featured Project"
-                                class="w-full h-full aspect-[4/5] object-cover">
+                                class="w-full h-full object-cover rounded-lg">
                         </div>
-                        <p class="text-gray-400 text-md leading-relaxed">
+                        <p class="text-gray-400 text-sm md:text-md leading-relaxed p-2">
                             <span class="text-white font-bold block mb-1">Bringing brands to life</span>
                             with innovative design and motion. Transforming ideas into engaging visual stories.
                         </p>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Video Section -->
-    <section class="py-[46px] md:py-[130px] px-4 md:px-0">
+    <section class="py-[26px] md:py-[130px] px-4 md:px-0">
         <div class="container mx-auto">
             <div class="justify-center mx-auto mb-12 overflow-hidden rounded-[20px] shadow-sm relative group md:p-0"
                 id="video-container">
@@ -138,54 +148,53 @@
 
 
     <!-- About Section -->
-    <section class=" py-8 px-10 overflow-hidden m-[8px] md:m-[16px] rounded-[16px]">
-        <div class=" max-w-[1142px] mx-auto py-[20px] md:py-[88px]">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+    <section class="px-4 sm:px-6 md:px-10 overflow-hidden rounded-[16px]">
+        <div class="max-w-[1142px] mx-auto py-[20px] md:py-[88px]">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-white">
 
-                <div class="flex flex-col items-center justify-center p-8 
+                <div class="flex flex-col items-center justify-center p-2 md:p-8 
             rounded-[16px] 
             bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
             shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
 
-                    <div class="flex items-baseline text-[#FF6B2C]">
-                        <h2 class="counter text-[48px] md:text-[40px] font-anton-sc leading-none" data-target="150">0
+                    <div class="justify-center flex items-baseline text-[#FF6B2C]">
+                        <h2 class="counter text-[20px] md:text-[40px] font-anton-sc leading-none" data-target="150">0
                         </h2>
-                        <span class="text-[48px] md:text-[40px] font-anton-sc leading-none">+</span>
+                        <span class="text-[20px] md:text-[40px] font-anton-sc leading-none">+</span>
                     </div>
 
-                    <p class="text-[16px] md:text-[20px] font-medium text-white opacity-90 mt-2">
+                    <p class="text-[12px] md:text-[20px] text-white opacity-90 mt-0 md:mt-2">
                         Projects Completed
                     </p>
                 </div>
 
-                <div class="flex flex-col items-center justify-center p-8 
+                <div class="flex flex-col items-center justify-center p-4 md:p-8 
             rounded-[16px] 
             bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
             shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
 
                     <div class="flex items-baseline text-[#FF6B2C]">
-                        <h2 class="counter text-[48px] md:text-[40px] font-anton-sc leading-none" data-target="140">0
+                        <h2 class="counter text-[20px] md:text-[40px] font-anton-sc leading-none" data-target="140">0
                         </h2>
-                        <span class="text-[48px] md:text-[40px] font-anton-sc leading-none">+</span>
+                        <span class="text-[20px] md:text-[40px] font-anton-sc leading-none">+</span>
                     </div>
 
-                    <p class="text-[16px] md:text-[20px] font-medium text-white opacity-90 mt-2">
+                    <p class="text-[12px] md:text-[20px] text-white opacity-90">
                         Happy Clients
                     </p>
                 </div>
 
-                <div class="flex flex-col items-center justify-center p-8 
-            rounded-[16px] 
-            bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
-            shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
-
+                <div class="flex flex-col items-center justify-center p-4 md:p-8 
+                rounded-[16px] 
+                bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
+                shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]
+                col-span-2 md:col-span-1">
                     <div class="flex items-baseline text-[#FF6B2C]">
-                        <h2 class="counter text-[48px] md:text-[40px] font-anton-sc leading-none" data-target="6">0
-                        </h2>
-                        <span class="text-[48px] md:text-[40px] font-anton-sc leading-none">+</span>
+                        <h2 class="counter text-[20px] md:text-[40px] font-anton-sc leading-none" data-target="6">0</h2>
+                        <span class="text-[20px] md:text-[40px] font-anton-sc leading-none">+</span>
                     </div>
 
-                    <p class="text-[16px] md:text-[20px] font-medium text-white opacity-90 mt-2">
+                    <p class="text-[12px] md:text-[20px] text-white opacity-90 mt-0 md:mt-2">
                         Years Experience
                     </p>
                 </div>
@@ -196,67 +205,76 @@
 
 
     <!-- Services Section -->
-    <section class="py-10 md:py-37 bg-[#0A0A0A]">
-        <div class="container mx-auto px-4 md:px-0">
-            <div class="grid grid-cols-12 gap-8 items-start">
+    <section class="py-10 md:py-20 bg-[#0A0A0A]">
+        <div class="container mx-auto px-4 md:px-8 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-                <div class="col-span-12 lg:col-span-5">
+                <!-- Left Column -->
+                <div class="lg:col-span-5">
                     <h2
-                        class="font-anton-sc text-[#FF7A3B] text-[34px] md:text-[24px] font-black leading-[0.9] uppercase mb-6">
+                        class="font-anton-sc text-[#FF7A3B] text-[28px] md:text-[24px] font-black leading-[0.9] uppercase mb-6">
                         MY SERVICES
                     </h2>
-                    <p class="text-[36px] md:text-[48px] text-[#FFF] leading-tight">
+                    <p class="text-[30px] md:text-[36px] lg:text-[48px] text-[#FFF] leading-tight">
                         Design solutions for static graphics and motion content.
                     </p>
                 </div>
 
-                <div class="col-span-12 lg:col-span-7 space-y-4" id="accordion-container">
+                <!-- Accordion -->
+                <div class="lg:col-span-7 space-y-4" id="accordion-container">
 
+                    <!-- Item 1 -->
                     <div
-                        class="accordion-item max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] transition-all duration-300 cursor-pointer">
-
+                        class="accordion-item open border border-[#333] p-5 md:p-8 flex flex-col gap-4 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] transition-all duration-300 cursor-pointer">
                         <div class="flex flex-col">
-                            <h3 class="text-white text-[32px] font-anton-sc uppercase">Graphic Design Mastery</h3>
-                            <p class="text-gray-400 text-[20px]">Expert in creating compelling visual identities and
-                                marketing materials</p>
+                            <h3 class="text-white text-[20px] md:text-[28px] lg:text-[32px] font-anton-sc uppercase">
+                                Graphic Design Mastery</h3>
+                            <p class="text-gray-400 text-[14px] md:text-[18px] lg:text-[20px]">Expert in creating
+                                compelling visual identities and marketing materials</p>
 
-
-                            <div class="accordion-content overflow-hidden transition-all duration-500 ease-in-out">
-                                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                            <div class="accordion-content">
+                                <div class="flex flex-col md:flex-row gap-6 mt-4">
                                     <div class="flex-1">
-                                        <div class="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4">
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Branding
+                                        <div class="grid grid-cols-2 gap-x-6 gap-y-3">
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Branding
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Packaging
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Packaging
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Flyers</div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Infographic
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Flyers
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Posters</div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Presentation
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Infographic
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Media
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Posters
+                                            </div>
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Presentation
+                                            </div>
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Media
                                                 Kit
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="w-full md:w-[228px] shrink-0">
+                                    <div class="w-full md:w-[180px] lg:w-[228px] shrink-0">
                                         <img src="assets/images/graphic-image1.png" alt="Graphic Design"
                                             class="w-full h-auto object-cover rounded-xl border border-[#333]">
                                     </div>
                                 </div>
-
-                                <div class="flex justify-end mt-6">
+                                <div class="flex justify-end mt-4 md:mt-6">
                                     <a href="#"
-                                        class="border border-[#444] text-white px-8 py-3 rounded-full text-[16px] uppercase flex items-center gap-3">
+                                        class="border border-[#444] text-white px-5 md:px-8 py-2 md:py-3 rounded-full text-[13px] md:text-[16px] uppercase flex items-center gap-2 md:gap-3">
                                         Learn More <img src="assets/images/arrow-icon.svg">
                                     </a>
                                 </div>
@@ -264,106 +282,124 @@
                         </div>
                     </div>
 
+                    <!-- Item 2 -->
                     <div
-                        class="accordion-item max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] cursor-pointer transition-all duration-300">
-
+                        class="accordion-item border border-[#333] p-5 md:p-8 flex flex-col gap-4 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] cursor-pointer transition-all duration-300">
                         <div class="flex flex-col">
-                            <h3 class="text-white text-[32px] font-anton-sc uppercase">Motion Graphics Excellence</h3>
-                            <p class="text-gray-400 mb-4 text-[20px]">Specialized in creating engaging animated
-                                content and video production</p>
-
+                            <h3 class="text-white text-[20px] md:text-[28px] lg:text-[32px] font-anton-sc uppercase">
+                                Motion Graphics Excellence</h3>
+                            <p class="text-gray-400 text-[14px] md:text-[18px] lg:text-[20px]">Specialized in creating
+                                engaging animated content and video production</p>
 
                             <div
                                 class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
-                                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                                <div class="flex flex-col md:flex-row gap-6 mt-4">
                                     <div class="flex-1">
-                                        <div class="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4">
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Explainer
+                                        <div class="grid grid-cols-2 gap-x-6 gap-y-3">
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Explainer
                                                 Videos
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Reels
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Reels
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Promo Videos
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Promo Videos
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Brand Intro
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Brand Intro
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Motion
-                                                Graphics</div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Video
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Motion
+                                                Graphics
+                                            </div>
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Video
                                                 Ads
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Company
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Company
                                                 Profile Video
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-full md:w-[228px] shrink-0">
+                                    <div class="w-full md:w-[180px] lg:w-[228px] shrink-0">
                                         <img src="assets/images/graphic-image2.png" alt="Motion"
                                             class="w-full h-auto object-cover rounded-xl border border-[#333]">
                                     </div>
                                 </div>
-                                <div class="flex justify-end mt-6">
+                                <div class="flex justify-end mt-4 md:mt-6">
                                     <a href="#"
-                                        class="border border-[#444] text-white px-8 py-3 rounded-full text-sm uppercase flex items-center gap-3">Learn
-                                        More <img src="assets/images/arrow-icon.svg"></a>
+                                        class="border border-[#444] text-white px-5 md:px-8 py-2 md:py-3 rounded-full text-[13px] md:text-[16px] uppercase flex items-center gap-2 md:gap-3">
+                                        Learn More <img src="assets/images/arrow-icon.svg">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Item 3 -->
                     <div
-                        class="accordion-item max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] cursor-pointer transition-all duration-300">
-
+                        class="accordion-item border border-[#333] p-5 md:p-8 flex flex-col gap-4 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] cursor-pointer transition-all duration-300">
                         <div class="flex flex-col">
-                            <h3 class="text-white text-[32px] font-anton-sc uppercase">Photoshop Mastery in photo
-                                manipulation</h3>
-                            <p class="text-gray-400 mb-4 text-[20px]">Expert in crafting captivating visuals and
-                                high-quality production using Photoshop.</p>
-
+                            <h3 class="text-white text-[20px] md:text-[28px] lg:text-[32px] font-anton-sc uppercase">
+                                Photoshop Mastery in Photo Manipulation</h3>
+                            <p class="text-gray-400 text-[14px] md:text-[18px] lg:text-[20px]">Expert in crafting
+                                captivating visuals and high-quality production using Photoshop.</p>
 
                             <div
                                 class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
-                                <div class="flex flex-col md:flex-row gap-8 mt-4">
+                                <div class="flex flex-col md:flex-row gap-6 mt-4">
                                     <div class="flex-1">
-                                        <div class="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4">
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Branding
+                                        <div class="grid grid-cols-2 gap-x-6 gap-y-3">
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Branding
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Packaging
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Packaging
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Flyers</div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Infographic
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Flyers
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Posters</div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Presentation
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Infographic
                                             </div>
-                                            <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
-                                                    src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Media
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Posters
+                                            </div>
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Presentation
+                                            </div>
+                                            <div
+                                                class="flex items-center gap-2 text-[#FFF] text-[13px] md:text-[14px] lg:text-[16px] uppercase">
+                                                <img src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Media
                                                 Kit
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-full md:w-[228px] shrink-0">
+                                    <div class="w-full md:w-[180px] lg:w-[228px] shrink-0">
                                         <img src="assets/images/graphic-image3.png" alt="Photoshop"
                                             class="w-full h-auto object-cover rounded-xl border border-[#333]">
                                     </div>
                                 </div>
-                                <div class="flex justify-end mt-6">
+                                <div class="flex justify-end mt-4 md:mt-6">
                                     <a href="#"
-                                        class="border border-[#444] text-white px-8 py-3 rounded-full text-sm uppercase flex items-center gap-3">Learn
-                                        More <img src="assets/images/arrow-icon.svg"></a>
+                                        class="border border-[#444] text-white px-5 md:px-8 py-2 md:py-3 rounded-full text-[13px] md:text-[16px] uppercase flex items-center gap-2 md:gap-3">
+                                        Learn More <img src="assets/images/arrow-icon.svg">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -378,12 +414,12 @@
     <!-- Graphic Design -->
     <section class="bg-[#121212] py-12">
         <div class="container mx-auto px-4">
-            <div class="mb-12 text-center">
+            <div class="mb-6 md:mb-12 text-center">
                 <h3 class="text-orange-500 font-anton-sc uppercase text-[24px] mb-2">My Graphics Work</h3>
                 <h2 class="text-white text-[48px]">Designed Projects, Real Impact</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb:gap-8">
 
                 <div class="space-y-4">
                     <div class="text-gray-500 text-[40px] justify-self-end">01</div>
@@ -420,175 +456,507 @@
     </section>
 
     <!-- Motion Design Works -->
-
-    <section class="bg-[#1a1a1a] py-[46px] md:py-[130px] px-4">
+    <section class="text-[#FFF] py-12 md:py-16 px-4">
         <div class="container mx-auto">
-            <div class="text-center mb-16">
-                <h4 class="text-orange-500 font-semibold tracking-widest uppercase text-sm mb-2">My Motion Works</h4>
-                <h2 class="text-white text-4xl md:text-5xl font-bold">Moving Brands with Motions</h2>
+            <div class="text-center mb-10">
+                <h3 class="text-[#FF7A3B] font-anton-sc uppercase text-[24px] mb-2">My Motion Works</h3>
+                <h2 class="text-4xl md:text-[48px] font-clash-grotesk-regular">Moving Brands with Motions</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-4 h-auto md:h-[600px] relative">
 
-                <div class="relative group rounded-[20px] overflow-hidden bg-gray-800 max-w-[864px]">
-                    <img src="assets/images/motion-vdo-img1.png" alt="Corporate" class="w-full h-full object-cover">
-                    <div class="absolute top-4 left-6 text-white text-xl font-medium">Corporate Videos</div>
-                    <button
-                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
-                        <div
-                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                <div class="hidden md:block absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+                    <a href="#"
+                        class="pointer-events-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-full w-35 h-35 flex flex-col items-center justify-center transition-all duration-300 hover:scale-110 group">
+                        <span class="text-[24px] font-anton-sc uppercase">→</span>
+                        <span class="text-[24px] font-anton-sc uppercase mt-1">See Work</span>
+                    </a>
+                </div>
+
+                <div class="md:col-span-6 md:row-span-1 relative overflow-hidden rounded-xl group bg-[#222]">
+                    <img src="assets/images/motion-vdo-img1.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-105"
+                        alt="Corporate">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="relative p-6 h-full flex flex-col">
+                        <span class="text-[20px] md:text-[32px]">Corporate Videos</span>
+                        <div class="mt-auto mb-auto flex justify-center">
                             <div
-                                class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1">
+                                class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+                                <div
+                                    class="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1">
+                                </div>
                             </div>
                         </div>
-                    </button>
+                    </div>
                 </div>
 
-                <div class="relative group rounded-[20px] overflow-hidden bg-gray-800 max-w-[408px]">
-                    <img src="assets/images/motion-vdo-img2.png" alt="Travel" class="w-full h-full object-cover">
-                    <div class="absolute top-4 left-6 text-white text-xl font-medium">Travel Videos</div>
-                    <button
-                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
-                        <div
-                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                            <div
-                                class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1">
+                <div class="md:col-span-3 md:row-span-1 relative overflow-hidden rounded-xl group bg-purple-600">
+                    <img src="assets/images/motion-vdo-img2.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-500 group-hover:scale-105"
+                        alt="Travel">
+                    <div class="relative p-6 h-full flex flex-col">
+                        <span class="text-[20px] md:text-[32px]">Travel Videos</span>
+                        <div class="mt-auto mb-auto flex justify-center">
+                            <div class="w-10 h-10 rounded-full bg-white/30 flex items-center justify-center">
+                                <div
+                                    class="w-0 h-0 border-t-[5px] border-t-transparent border-l-[8px] border-l-white border-b-[5px] border-b-transparent ml-1">
+                                </div>
                             </div>
                         </div>
-                    </button>
+                    </div>
                 </div>
 
-                <div class="relative group rounded-[20px] overflow-hidden bg-gray-800 lg:row-span-2 max-w-[424px]">
-                    <img src="assets/images/motion-vdo-img3.png" alt="3D" class="w-full h-full object-cover">
-                    <div class="absolute top-4 left-6 text-white text-xl font-medium">3D Motion Videos</div>
-                    <button
-                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
-                        <div
-                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                <div class="md:col-span-3 md:row-span-2 relative overflow-hidden rounded-xl group bg-sky-600">
+                    <img src="assets/images/motion-vdo-img3.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-70 transition-transform duration-500 group-hover:scale-105"
+                        alt="3D Motion">
+                    <div class="relative p-6 h-full flex flex-col">
+                        <span class="text-[20px] md:text-[32px]">3D Motion Videos</span>
+                        <div class="mt-auto mb-auto flex justify-center">
                             <div
-                                class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1">
+                                class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/40">
+                                <div
+                                    class="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-white border-b-[8px] border-b-transparent ml-1">
+                                </div>
                             </div>
                         </div>
-                    </button>
+                    </div>
                 </div>
 
-                <div class="relative group rounded-[20px] overflow-hidden bg-gray-800 max-w-[636px]">
-                    <img src="assets/images/motion-vdo-img4.png" alt="Social" class="w-full h-full object-cover">
-                    <div class="absolute top-4 left-6 text-white text-xl font-medium">Social Ad Videos</div>
-                    <button
-                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
-                        <div
-                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                            <div
-                                class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1">
+                <div class="md:col-span-4 md:row-span-1 relative overflow-hidden rounded-xl group bg-green-800">
+                    <img src="assets/images/motion-vdo-img4.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-105"
+                        alt="Social Ads">
+                    <div class="relative p-6 h-full flex flex-col">
+                        <span class="text-[20px] md:text-[32px]">Social Ad Videos</span>
+                        <div class="mt-auto mb-auto flex justify-center">
+                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                                <div
+                                    class="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1">
+                                </div>
                             </div>
                         </div>
-                    </button>
+                    </div>
                 </div>
 
-                <div class="relative group rounded-[20px] overflow-hidden bg-gray-800 max-w-[636px]">
-                    <img src="assets/images/motion-vdo-img5.png" alt="Product" class="w-full h-full object-cover">
-                    <div class="absolute top-4 left-6 text-white text-xl font-medium">Product Videos</div>
-                    <button
-                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
-                        <div
-                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                <div class="md:col-span-5 md:row-span-1 relative overflow-hidden rounded-xl group bg-zinc-800">
+                    <img src="assets/images/motion-vdo-img5.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-500 group-hover:scale-105"
+                        alt="Product">
+                    <div class="relative p-6 h-full flex flex-col">
+                        <span class="text-[20px] md:text-[32px]">Product Videos</span>
+                        <div class="mt-auto mb-auto flex justify-center">
                             <div
-                                class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1">
+                                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border border-white/20">
+                                <div
+                                    class="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1">
+                                </div>
                             </div>
                         </div>
-                    </button>
+                    </div>
                 </div>
 
-                <div
-                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 hidden lg:flex items-center justify-center w-28 h-28 border border-white/20 rounded-full cursor-pointer hover:bg-white hover:text-black transition-all">
-                    <span class="text-white font-bold text-xs uppercase tracking-widest">See Work</span>
-                </div>
             </div>
         </div>
     </section>
 
 
 
-    <section class="bg-[#121212] text-white py-16 px-6 md:px-12 lg:px-24">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-16">
-                <h2 class="text-orange-500 font-bold tracking-widest text-sm uppercase mb-2">My Creative Process</h2>
-                <p class="text-3xl md:text-4xl lg:text-5xl font-light leading-tight text-gray-200">
+    <!-- Creative Process -->
+    <section class="text-[#FFF] py-0 md:py-16 px-4 md:px-0">
+        <div class="container mx-auto">
+            <div class="mb-4 md:mb-16">
+                <h2 class="text-[#FF7A3B] font-anton-sc text-[14px] md:text-[24px] uppercase mb-2">My Creative Process
+                </h2>
+                <p class="text-[20px] md:text-[48px] ">
                     A systematic approach to delivering <span class="text-gray-500">exceptional design and motion
                         work</span>
                 </p>
             </div>
-
-            <div class="flex flex-col gap-12">
-
-                <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 border-l-4 border-orange-500 pl-6">
-                    <div class="flex items-baseline gap-4 md:w-1/3">
-                        <span class="text-xl md:text-2xl font-mono text-gray-500">(01)</span>
-                        <h3 class="text-4xl md:text-5xl font-bold text-gray-200">DISCOVERY</h3>
-                    </div>
-                    <p class="text-gray-400 md:w-2/3 text-lg">Understanding your brand, goals, and target audience to
-                        create a strategic foundation.</p>
-                </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="group relative transition-all duration-500">
 
                 <div
-                    class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 border-l-4 border-transparent pl-6">
-                    <div class="flex items-baseline gap-4 md:w-1/3">
-                        <span class="text-xl md:text-2xl font-mono text-gray-500">(02)</span>
-                        <h3 class="text-4xl md:text-5xl font-bold text-gray-600">CONCEPT</h3>
-                    </div>
-                    <p class="text-gray-600 md:w-2/3 text-lg">Developing creative concepts and mood boards that align
-                        with your vision and objectives.</p>
+                    class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none border-t border-b border-white/25">
                 </div>
 
-                <div
-                    class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 border-l-4 border-transparent pl-6">
-                    <div class="flex items-baseline gap-4 md:w-1/3">
-                        <span class="text-xl md:text-2xl font-mono text-gray-500">(03)</span>
-                        <h3 class="text-4xl md:text-5xl font-bold text-gray-600">CREATION</h3>
+                <div class="container mx-auto relative z-10 px-4 md:px-0 py-4 md:py-10">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-8">
+
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="text-[16px] md:text-[48px] text-gray-500 group-hover:text-white transition-colors duration-300">(01)</span>
+                            <h3
+                                class="text-[20px] md:text-[96px] font-anton-sc bg-[linear-gradient(137deg,_#FFF_7.57%,_#85A2E0_93.4%)] bg-clip-text text-transparent">
+                                DISCOVERY
+                            </h3>
+                        </div>
+
+                        <p
+                            class="text-gray-400 md:max-w-[40%] text-[14px] md:text-[24px] text-left group-hover:text-white transition-colors duration-300">
+                            <span class="text-[#FF7A3B]">Understanding your brand, goals,</span>
+                            and target audience to create a strategic foundation.
+                        </p>
+
                     </div>
-                    <p class="text-gray-600 md:w-2/3 text-lg">Bringing concepts to life through design, animation, and
-                        meticulous attention to detail.</p>
+                </div>
+            </div>
+
+            <div class="group relative transition-all duration-500">
+
+                <div class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none
+        border-t border-b border-white/25">
                 </div>
 
-                <div
-                    class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 border-l-4 border-transparent pl-6">
-                    <div class="flex items-baseline gap-4 md:w-1/3">
-                        <span class="text-xl md:text-2xl font-mono text-gray-500">(04)</span>
-                        <h3 class="text-4xl md:text-5xl font-bold text-gray-600">DELIVERY</h3>
+                <div class="container mx-auto relative z-10 px-4 md:px-0 py-4 md:py-10">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-8">
+
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="text-[16px] md:text-[48px] text-gray-500 group-hover:text-white transition-colors duration-300">(02)</span>
+                            <h3
+                                class="text-[20px] md:text-[96px] font-anton-sc bg-[linear-gradient(137deg,_#FFF_7.57%,_#85A2E0_93.4%)] bg-clip-text text-transparent">
+                                Concept
+                            </h3>
+                        </div>
+
+                        <p
+                            class="text-gray-400 md:max-w-[40%] text-[14px] md:text-[24px] text-left group-hover:text-white transition-colors duration-300">
+                            <span class="text-[#FF7A3B]">Developing creative concepts and mood boards</span>
+                            that align with your vision and objectives.
+                        </p>
+
                     </div>
-                    <p class="text-gray-600 md:w-2/3 text-lg">Final refinements, optimization for all platforms, and
-                        seamless handoff of deliverables.</p>
+                </div>
+            </div>
+
+            <div class="group relative transition-all duration-500">
+
+                <div class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none
+        border-t border-b border-white/25">
                 </div>
 
+                <div class="container mx-auto relative z-10 px-4 md:px-0 py-4 md:py-10">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-8">
+
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="text-[16px] md:text-[48px] text-gray-500 group-hover:text-white transition-colors duration-300">(03)</span>
+                            <h3
+                                class="text-[20px] md:text-[96px] font-anton-sc bg-[linear-gradient(137deg,_#FFF_7.57%,_#85A2E0_93.4%)] bg-clip-text text-transparent">
+                                Creation
+                            </h3>
+                        </div>
+
+                        <p
+                            class="text-gray-400 md:max-w-[40%] text-[14px] md:text-[24px] text-left group-hover:text-white transition-colors duration-300">
+                            <span class="text-[#FF7A3B]">Bringing concepts to life through design</span>
+                            , animation, and meticulous attention to detail.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative transition-all duration-500">
+
+                <div class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none
+        border-t border-b border-white/25">
+                </div>
+
+                <div class="container mx-auto relative z-10 px-4 md:px-0 py-4 md:py-10">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-8">
+
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="text-[16px] md:text-[48px] text-gray-500 group-hover:text-white transition-colors duration-300">(04)</span>
+                            <h3
+                                class="text-[20px] md:text-[96px] font-anton-sc bg-[linear-gradient(137deg,_#FFF_7.57%,_#85A2E0_93.4%)] bg-clip-text text-transparent">
+                                Delivery
+                            </h3>
+                        </div>
+
+                        <p
+                            class="text-gray-400 md:max-w-[40%] text-[14px] md:text-[24px] text-left group-hover:text-white transition-colors duration-300">
+                            <span class="text-[#FF7A3B]">Final refinements, optimization for all platforms</span>
+                            , and seamless handoff of deliverables.
+                        </p>
+
+                    </div>
+                </div>
             </div>
         </div>
+
     </section>
 
 
-    <!-- <section class="bg-[#0a0a0a] py-20 px-6">
+    <!-- Client Feedback section -->
+
+    <section class="bg-[#0a0a0a] py-20 px-6 overflow-hidden">
+        <div class="container mx-auto mb-12 text-center">
+            <h2 class="text-[#FF7A3B] font-anton text-[20px] tracking-wider uppercase mb-4">Client Feedback</h2>
+            <p class="text-white text-[32px] md:text-[56px] font-light leading-tight tracking-tight">
+                What clients say about working with me
+            </p>
+        </div>
+        <!-- First auto scroll section -->
+        <div class="splide" id="feedback-carousel">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide px-4">
+                        <div
+                            class="w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                            <div class="absolute -left-15 -top-2">
+                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                                social
+                                media content that significantly boosted our engagement."
+                            </p>
+                            <div class="mt-auto">
+                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="splide__slide px-4">
+                        <div
+                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                            <div class="absolute -left-15 -top-2">
+                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                                social
+                                media content that significantly boosted our engagement."
+                            </p>
+                            <div class="mt-auto">
+                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide px-4">
+                        <div
+                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                            <div class="absolute -left-15 -top-2">
+                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                                social
+                                media content that significantly boosted our engagement."
+                            </p>
+                            <div class="mt-auto">
+                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="splide__slide px-4">
+                        <div
+                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                            <div class="absolute -left-15 -top-2">
+                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                                social
+                                media content that significantly boosted our engagement."
+                            </p>
+                            <div class="mt-auto">
+                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Second auto scroll section -->
+        <div class="splide pt-16" id="feedback-carousel2">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide px-4">
+                        <div
+                            class="w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                            <div class="absolute -left-15 -top-2">
+                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                                "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                stunning
+                                social
+                                media content that significantly boosted our engagement."
+                            </p>
+                            <div class="mt-auto">
+                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen
+                                </h4>
+                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="splide__slide px-4">
+                        <div
+                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                            <div class="absolute -left-15 -top-2">
+                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                                "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                stunning
+                                social
+                                media content that significantly boosted our engagement."
+                            </p>
+                            <div class="mt-auto">
+                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen
+                                </h4>
+                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide px-4">
+                        <div
+                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                            <div class="absolute -left-15 -top-2">
+                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                                "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                stunning
+                                social
+                                media content that significantly boosted our engagement."
+                            </p>
+                            <div class="mt-auto">
+                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen
+                                </h4>
+                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="splide__slide px-4">
+                        <div
+                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                            <div class="absolute -left-15 -top-2">
+                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            </div>
+                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                                "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                stunning
+                                social
+                                media content that significantly boosted our engagement."
+                            </p>
+                            <div class="mt-auto">
+                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen
+                                </h4>
+                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Get Started section -->
+    <section class="py-8 md:py-20 px-4 md:px-6">
         <div class="container mx-auto">
             <div
-                class="relative overflow-hidden rounded-[2rem] bg-gradient-to-b from-[#d95d1e] to-[#6b2e0f] px-8 py-16 md:py-24 text-center shadow-2xl">
-
-                <div class="relative z-10">
-                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                class="relative overflow-hidden rounded-4xl bg-[linear-gradient(180deg,#FF7A3B_0%,#381200_100%)] px-8 py-16 md:py-24 text-center shadow-2xl">
+                <div class="relative z-10 flex flex-col items-center">
+                    <h2 class="text-[20px] md:text-[64px] font-clash-grotesk-bold text-white mb-6">
                         Not limited to video,<br>
                         I'm your creative comrade.
                     </h2>
 
-                    <p class="text-gray-200 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto opacity-90">
+                    <p class="text-gray-200 text-[14px] md:text-[40px] font-light mb-10 max-w-2xl mx-auto opacity-90">
                         Got questions, project ideas, or just want to say hi? I'm all ears!
                     </p>
 
                     <button
-                        class="group relative inline-flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-[#e97b41] to-[#1e6b5a] border border-white/30 text-white font-medium">
+                        class="group flex justify-center items-center gap-3 px-8 py-3 rounded-full text-white text-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95 bg-[linear-gradient(90deg,#ea8a46_0%,#2f7365_100%)] border-2 border-[#5a4b42] mx-auto">
                         Get Started
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg>
                     </button>
                 </div>
@@ -598,13 +966,38 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
+
+
+    <footer class="footer-container">
+        <div class="footer-content">
+
+            <h1 class="hero-text">SAYED HOSSAIN</h1>
+
+            <div class="design-pill">
+                <span class="pill-text">GRAPHIC & MOTION DESIGNER</span>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Home</a>
+                <a href="#" class="footer-link">Projects</a>
+                <a href="#" class="footer-link">Services</a>
+                <a href="#" class="footer-link">Download CV</a>
+            </nav>
+
+        </div>
+    </footer>
 
 
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>

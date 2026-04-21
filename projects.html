@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayed Hossain</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+</head>
+
+<body>
+
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <div class="brand-img-wrapper">
+                    <img src="assets/images/nav-img.png" alt="Rafiqul Islam" class="brand-img" />
+                </div>
+                <span class="brand-name">Sayed Hossain</span>
+            </a>
+
+            <div class="nav-actions">
+                <ul class="desktop-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="#" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link">Download CV</a></li>
+                </ul>
+
+                <button id="hamburger" class="hamburger">
+                    <span id="ham1" class="ham-line"></span>
+                    <span id="ham2" class="ham-line"></span>
+                    <span id="ham3" class="ham-line ham-short"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="index.html" class="mobile-link border-bottom">Home</a>
+        <a href="projects.html" class="mobile-link border-bottom">Projects</a>
+        <a href="#" class="mobile-link">Services</a>
+        <a href="#" class="mobile-link">Download CV</a>
+    </div>
+
+
+    <section class="md:py-0 lg:py-0 lg:mb-0 px-4 md:px-0">
+        <div class="container mx-auto pt-20 md:pt-25 text-center">
+
+            <div class="text-center pt-0 md:pt-5">
+                <p class="text-[#FF7A3B] font-anton text-xs md:text-[24px] uppercase tracking-[0.2em] mb-4">
+                    My Works
+                </p>
+
+                <h2 class="text-[32px] md:text-[32px] text-gray-400 leading-[1.15] max-w-4xl mx-auto mb-12">
+                    A curated collection of UX projects focused on solving real user problems, improving product
+                    performance.
+                </h2>
+
+                <div class="flex justify-center w-full">
+                    <div class="flex items-center gap-4 overflow-x-auto pb-4 scrollbar-hide whitespace-nowrap">
+                        <a href="#" data-filter="all"
+                            class="filter-btn active px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white bg-[#FF7A3B]">All
+                            Works</a>
+
+                        <a href="#" data-filter="dashboard"
+                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white hover:bg-[#FF7A3B] hover:text-white border border-amber-100">Motion
+                            Graphics</a>
+
+                        <a href="#" data-filter="saas"
+                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white hover:bg-[#FF7A3B] hover:text-white transition-all border border-white">Graphic
+                            Design</a>
+
+                        <a href="#" data-filter="mobile"
+                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white hover:bg-[#FF7A3B] hover:text-white transition-all border border-white">Explainer
+                            Video
+                            Apps</a>
+
+                        <a href="#" data-filter="web"
+                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white hover:bg-[#FF7A3B] hover:text-white transition-all border border-white">Explainer
+                            Video</a>
+
+                        <a href="#" data-filter="web"
+                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white hover:bg-[#FF7A3B] hover:text-white transition-all border border-white">Social
+                            Media Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="py-[16px] md:py-[80px] px-4 md:px-0">
+                <div class="container mx-auto">
+                    <div class="justify-center mx-auto mb-12 overflow-hidden rounded-[20px] shadow-sm relative group md:p-0"
+                        id="video-container">
+                        <img src="assets/images/video-thumb.png" alt="Featured Project" class="w-full h-auto block"
+                            id="video-thumbnail">
+
+                        <button onclick="playVideo()"
+                            class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all duration-300"
+                            id="play-button">
+                            <div
+                                class="w-full max-w-[45px] rounded-full flex items-center justify-center shadow-xl transform group-hover:scale-102 transition-transform cursor-pointer">
+                                <img class="w-full aspect-45/45" src="assets/images/home-img7.svg" alt="Play Icon">
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="w-full py-[10px] md:py-[20px] border border-white/5">
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <a href="#" data-category="dashboard"
+                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/project-img1.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <p
+                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            Motion
+                            Graphics</p>
+                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
+                            Tech
+                            Startup Explainer
+                        </h3>
+                        <p
+                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            (2026)</p>
+                    </a>
+
+                    <a href="#" data-category="dashboard"
+                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/project-img2.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <p
+                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            Motion
+                            Graphics</p>
+                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
+                            Tech
+                            Startup Explainer
+                        </h3>
+                        <p
+                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            (2026)</p>
+                    </a>
+                    <a href="#" data-category="dashboard"
+                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/project-img3.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <p
+                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            Motion
+                            Graphics</p>
+                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
+                            Tech
+                            Startup Explainer
+                        </h3>
+                        <p
+                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            (2026)</p>
+                    </a>
+                    <a href="#" data-category="dashboard"
+                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/project-img4.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <p
+                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            Motion
+                            Graphics</p>
+                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
+                            Tech
+                            Startup Explainer
+                        </h3>
+                        <p
+                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            (2026)</p>
+                    </a>
+                    <a href="#" data-category="dashboard"
+                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/project-img5.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <p
+                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            Motion
+                            Graphics</p>
+                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
+                            Tech
+                            Startup Explainer
+                        </h3>
+                        <p
+                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            (2026)</p>
+                    </a>
+
+                    <a href="#" data-category="dashboard"
+                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/project-img6.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <p
+                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            Motion
+                            Graphics</p>
+                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
+                            Tech
+                            Startup Explainer
+                        </h3>
+                        <p
+                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            (2026)</p>
+                    </a>
+                    <a href="#" data-category="dashboard"
+                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/project-img7.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <p
+                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            Motion
+                            Graphics</p>
+                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
+                            Tech
+                            Startup Explainer
+                        </h3>
+                        <p
+                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            (2026)</p>
+                    </a>
+                    <a href="#" data-category="dashboard"
+                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
+                        <div class="rounded-xl overflow-hidden mb-4">
+                            <img src="assets/images/project-img8.png" alt="Blez"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                        </div>
+                        <p
+                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            Motion
+                            Graphics</p>
+                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
+                            Tech
+                            Startup Explainer
+                        </h3>
+                        <p
+                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
+                            (2026)</p>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="px-4 sm:px-6 md:px-10 overflow-hidden rounded-[16px] ">
+        <div class="max-w-[1142px] mx-auto py-[40px] md:py-[88px]">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-white">
+
+                <div class="flex flex-col items-center justify-center p-2 md:p-8 
+            rounded-[16px] 
+            bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
+            shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
+
+                    <div class="justify-center flex items-baseline text-[#FF6B2C]">
+                        <h2 class="counter text-[20px] md:text-[40px] font-anton-sc leading-none" data-target="150">0
+                        </h2>
+                        <span class="text-[20px] md:text-[40px] font-anton-sc leading-none">+</span>
+                    </div>
+
+                    <p class="text-[12px] md:text-[20px] text-white opacity-90 mt-0 md:mt-2">
+                        Projects Completed
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center justify-center p-4 md:p-8 
+            rounded-[16px] 
+            bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
+            shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
+
+                    <div class="flex items-baseline text-[#FF6B2C]">
+                        <h2 class="counter text-[20px] md:text-[40px] font-anton-sc leading-none" data-target="140">0
+                        </h2>
+                        <span class="text-[20px] md:text-[40px] font-anton-sc leading-none">+</span>
+                    </div>
+
+                    <p class="text-[12px] md:text-[20px] text-white opacity-90">
+                        Happy Clients
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center justify-center p-4 md:p-8 
+                rounded-[16px] 
+                bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
+                shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]
+                col-span-2 md:col-span-1">
+                    <div class="flex items-baseline text-[#FF6B2C]">
+                        <h2 class="counter text-[20px] md:text-[40px] font-anton-sc leading-none" data-target="6">0</h2>
+                        <span class="text-[20px] md:text-[40px] font-anton-sc leading-none">+</span>
+                    </div>
+
+                    <p class="text-[12px] md:text-[20px] text-white opacity-90 mt-0 md:mt-2">
+                        Years Experience
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Get Started section -->
+    <section class="py-8 md:py-20 px-4 md:px-6">
+        <div class="container mx-auto">
+            <div
+                class="relative overflow-hidden rounded-4xl bg-[linear-gradient(180deg,#FF7A3B_0%,#381200_100%)] px-8 py-16 md:py-24 text-center shadow-2xl">
+                <div class="relative z-10 flex flex-col items-center">
+                    <h2 class="text-[20px] md:text-[64px] font-clash-grotesk-bold text-white mb-6">
+                        Not limited to video,<br>
+                        I'm your creative comrade.
+                    </h2>
+
+                    <p class="text-gray-200 text-[14px] md:text-[40px] font-light mb-10 max-w-2xl mx-auto opacity-90">
+                        Got questions, project ideas, or just want to say hi? I'm all ears!
+                    </p>
+
+                    <button
+                        class="group flex justify-center items-center gap-3 px-8 py-3 rounded-full text-white text-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95 bg-[linear-gradient(90deg,#ea8a46_0%,#2f7365_100%)] border-2 border-[#5a4b42] mx-auto">
+                        Get Started
+                        <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div
+                    class="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.4)_100%)]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer-container">
+        <div class="footer-content">
+
+            <h1 class="hero-text">SAYED HOSSAIN</h1>
+
+            <div class="design-pill">
+                <span class="pill-text">GRAPHIC & MOTION DESIGNER</span>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Home</a>
+                <a href="#" class="footer-link">Projects</a>
+                <a href="#" class="footer-link">Services</a>
+                <a href="#" class="footer-link">Download CV</a>
+            </nav>
+
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

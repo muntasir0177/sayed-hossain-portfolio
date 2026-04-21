@@ -166,3 +166,1614 @@ antony sc
             </div>
         </div>
     </section> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:wght@300;400&display=swap');
+
+        :root {
+            --bg-gradient: linear-gradient(180deg, #110c0a 0%, #3d1b02 100%);
+            --pill-bg: #1a1a1a;
+            --orange: #ff5f00;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        .footer-container {
+            width: 100%;
+            height: 450px;
+            background: var(--bg-gradient);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-content {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* বড় টেক্সট স্টাইল */
+        .hero-text {
+            font-family: 'Anton SC', sans-serif;
+            font-size: 150px;
+            color: #fff;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            white-space: nowrap;
+            user-select: none;
+        }
+
+        /* সেই বাঁকানো কালো পিল/ক্যাপসুল */
+        .design-pill {
+            position: absolute;
+            background: #111;
+            padding: 12px 40px;
+            border-radius: 100px;
+            border: 1px solid #333;
+            transform: rotate(-12deg);
+            /* ছবির মতো বাঁকানো */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pill-text {
+            color: var(--orange);
+            font-family: 'Anton SC', sans-serif;
+            font-size: 24px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* লিঙ্কগুলোর পজিশন (ডেক্সটপে উপরে ডানদিকে) */
+        .footer-nav {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            display: flex;
+            gap: 30px;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .footer-link:hover {
+            color: #fff;
+        }
+
+        /* --- Responsive (Mobile) --- */
+        @media (max-width: 1024px) {
+            .hero-text {
+                font-size: 100px;
+            }
+
+            .pill-text {
+                font-size: 18px;
+            }
+
+            .footer-nav {
+                top: -80px;
+                right: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                height: 350px;
+            }
+
+            .hero-text {
+                font-size: 60px;
+            }
+
+            .design-pill {
+                padding: 8px 25px;
+                transform: rotate(-10deg);
+            }
+
+            .pill-text {
+                font-size: 14px;
+            }
+
+            .footer-nav {
+                top: auto;
+                bottom: -80px;
+                right: auto;
+                width: 100%;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer class="footer-container">
+        <div class="footer-content">
+
+            <h1 class="hero-text">SAYED HOSSAIN</h1>
+
+            <div class="design-pill">
+                <span class="pill-text">GRAPHIC & MOTION DESIGNER</span>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Home</a>
+                <a href="#" class="footer-link">Projects</a>
+                <a href="#" class="footer-link">Services</a>
+                <a href="#" class="footer-link">Download CV</a>
+            </nav>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+<section class="py-10 md:py-37 bg-[#0A0A0A]">
+    <div class="container mx-auto px-4 md:px-0">
+        <div class="grid grid-cols-12 gap-8 items-start">
+
+            <div class="col-span-12 lg:col-span-5">
+                <h2
+                    class="font-anton-sc text-[#FF7A3B] text-[34px] md:text-[24px] font-black leading-[0.9] uppercase mb-6">
+                    MY SERVICES
+                </h2>
+                <p class="text-[36px] md:text-[48px] text-[#FFF] leading-tight">
+                    Design solutions for static graphics and motion content.
+                </p>
+            </div>
+
+            <div class="col-span-12 lg:col-span-7 space-y-4" id="accordion-container">
+
+                <div
+                    class="accordion-item max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] transition-all duration-300 cursor-pointer">
+
+                    <div class="flex flex-col">
+                        <h3 class="text-white text-[32px] font-anton-sc uppercase">Graphic Design Mastery</h3>
+                        <p class="text-gray-400 text-[20px]">Expert in creating compelling visual identities and
+                            marketing materials</p>
+
+
+                        <div class="accordion-content overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="flex flex-col md:flex-row gap-8 mt-4">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4">
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Branding
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Packaging
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Flyers</div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Infographic
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Posters</div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Presentation
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Media
+                                            Kit
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="w-full md:w-[228px] shrink-0">
+                                    <img src="assets/images/graphic-image1.png" alt="Graphic Design"
+                                        class="w-full h-auto object-cover rounded-xl border border-[#333]">
+                                </div>
+                            </div>
+
+                            <div class="flex justify-end mt-6">
+                                <a href="#"
+                                    class="border border-[#444] text-white px-8 py-3 rounded-full text-[16px] uppercase flex items-center gap-3">
+                                    Learn More <img src="assets/images/arrow-icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="accordion-item max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] cursor-pointer transition-all duration-300">
+
+                    <div class="flex flex-col">
+                        <h3 class="text-white text-[32px] font-anton-sc uppercase">Motion Graphics Excellence</h3>
+                        <p class="text-gray-400 mb-4 text-[20px]">Specialized in creating engaging animated
+                            content and video production</p>
+
+
+                        <div class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                            <div class="flex flex-col md:flex-row gap-8 mt-4">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4">
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Explainer
+                                            Videos
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Reels
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Promo Videos
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Brand Intro
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Motion
+                                            Graphics</div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Video
+                                            Ads
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Company
+                                            Profile Video
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-[228px] shrink-0">
+                                    <img src="assets/images/graphic-image2.png" alt="Motion"
+                                        class="w-full h-auto object-cover rounded-xl border border-[#333]">
+                                </div>
+                            </div>
+                            <div class="flex justify-end mt-6">
+                                <a href="#"
+                                    class="border border-[#444] text-white px-8 py-3 rounded-full text-sm uppercase flex items-center gap-3">Learn
+                                    More <img src="assets/images/arrow-icon.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="accordion-item max-w-[850px] border border-[#333] p-8 flex flex-col gap-6 rounded-[16px] bg-[linear-gradient(180deg,#575757_0%,#000514_100%)] shadow-[-2px_2px_0_0_rgba(255,255,255,0.25)] cursor-pointer transition-all duration-300">
+
+                    <div class="flex flex-col">
+                        <h3 class="text-white text-[32px] font-anton-sc uppercase">Photoshop Mastery in photo
+                            manipulation</h3>
+                        <p class="text-gray-400 mb-4 text-[20px]">Expert in crafting captivating visuals and
+                            high-quality production using Photoshop.</p>
+
+
+                        <div class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                            <div class="flex flex-col md:flex-row gap-8 mt-4">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4">
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Branding
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Packaging
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Flyers</div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Infographic
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Posters</div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Presentation
+                                        </div>
+                                        <div class="flex items-center gap-3 text-[#FFF] text-[16px] uppercase"><img
+                                                src="assets/images/service-icon1.svg" class="w-4 h-4"> Social Media
+                                            Kit
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-[228px] shrink-0">
+                                    <img src="assets/images/graphic-image3.png" alt="Photoshop"
+                                        class="w-full h-auto object-cover rounded-xl border border-[#333]">
+                                </div>
+                            </div>
+                            <div class="flex justify-end mt-6">
+                                <a href="#"
+                                    class="border border-[#444] text-white px-8 py-3 rounded-full text-sm uppercase flex items-center gap-3">Learn
+                                    More <img src="assets/images/arrow-icon.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- About Section -->
+<section class="px-4 sm:px-6 md:px-10 overflow-hidden rounded-[16px]">
+    <div class="max-w-[1142px] mx-auto py-[20px] md:py-[88px]">
+        <div class="grid grid-cols-3 gap-2 md:gap-6 text-white">
+
+            <div class="flex flex-col items-center justify-center p-2 md:p-8 
+            rounded-[16px] 
+            bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
+            shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
+
+                <div class="justify-center flex items-baseline text-[#FF6B2C]">
+                    <h2 class="counter text-[20px] md:text-[40px] font-anton-sc leading-none" data-target="150">0
+                    </h2>
+                    <span class="text-[20px] md:text-[40px] font-anton-sc leading-none">+</span>
+                </div>
+
+                <p class="text-[12px] md:text-[20px] text-white opacity-90 mt-0 md:mt-2">
+                    Projects Completed
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center p-4 md:p-8 
+            rounded-[16px] 
+            bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
+            shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
+
+                <div class="flex items-baseline text-[#FF6B2C]">
+                    <h2 class="counter text-[20px] md:text-[40px] font-anton-sc leading-none" data-target="140">0
+                    </h2>
+                    <span class="text-[20px] md:text-[40px] font-anton-sc leading-none">+</span>
+                </div>
+
+                <p class="text-[12px] md:text-[20px] text-white opacity-90">
+                    Happy Clients
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center p-4 md:p-8 
+            rounded-[16px] 
+            bg-[linear-gradient(180deg,#3F3F3F_0%,#252525_100%)] 
+            shadow-[2px_2px_0_0_rgba(255,255,255,0.25)]">
+
+                <div class="flex items-baseline text-[#FF6B2C]">
+                    <h2 class="counter text-[20px] md:text-[40px] font-anton-sc leading-none" data-target="6">0
+                    </h2>
+                    <span class="text-[20px] md:text-[40px] font-anton-sc leading-none">+</span>
+                </div>
+
+                <p class="text-[12px] md:text-[20px] text-white opacity-90 mt-0 md:mt-2">
+                    Years Experience
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Splide CSS - Add this in your <head> -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"> -->
+
+<!-- Client Feedback section -->
+<section class="bg-[#0a0a0a] py-20 px-6 overflow-hidden">
+    <div class="container mx-auto mb-12 text-center">
+        <h2 class="text-[#FF7A3B] font-anton text-[20px] tracking-wider uppercase mb-4">Client Feedback</h2>
+        <p class="text-white text-[32px] md:text-[56px] font-light leading-tight tracking-tight">
+            What clients say about working with me
+        </p>
+    </div>
+
+    <!-- First auto scroll section: Right to Left -->
+    <div id="splide1" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+
+                <li class="splide__slide">
+                    <div
+                        class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                        <div class="absolute -left-4 -top-2">
+                            <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                                class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                        </div>
+                        <div class="flex gap-1 mb-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                        </div>
+                        <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                            "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                            social
+                            media content that significantly boosted our engagement."
+                        </p>
+                        <div class="mt-auto">
+                            <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                            <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div
+                        class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                        <div class="absolute -left-4 -top-2">
+                            <img src="https://i.pravatar.cc/100?u=sarah" alt="Sarah"
+                                class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                        </div>
+                        <div class="flex gap-1 mb-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                        </div>
+                        <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                            "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                            social
+                            media content that significantly boosted our engagement."
+                        </p>
+                        <div class="mt-auto">
+                            <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                            <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div
+                        class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                        <div class="absolute -left-4 -top-2">
+                            <img src="https://i.pravatar.cc/100?u=alex" alt="Alex"
+                                class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                        </div>
+                        <div class="flex gap-1 mb-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                        </div>
+                        <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                            "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                            social
+                            media content that significantly boosted our engagement."
+                        </p>
+                        <div class="mt-auto">
+                            <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                            <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div
+                        class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                        <div class="absolute -left-4 -top-2">
+                            <img src="https://i.pravatar.cc/100?u=nina" alt="Nina"
+                                class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                        </div>
+                        <div class="flex gap-1 mb-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                        </div>
+                        <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                            "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                            social
+                            media content that significantly boosted our engagement."
+                        </p>
+                        <div class="mt-auto">
+                            <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                            <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Second auto scroll section: Left to Right -->
+    <div id="splide2" class="splide pt-20">
+        <div class="splide__track">
+            <ul class="splide__list">
+
+                <li class="splide__slide">
+                    <div
+                        class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                        <div class="absolute -left-4 -top-2">
+                            <img src="https://i.pravatar.cc/100?u=james" alt="James"
+                                class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                        </div>
+                        <div class="flex gap-1 mb-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                        </div>
+                        <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                            "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                            social
+                            media content that significantly boosted our engagement."
+                        </p>
+                        <div class="mt-auto">
+                            <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                            <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div
+                        class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                        <div class="absolute -left-4 -top-2">
+                            <img src="https://i.pravatar.cc/100?u=lisa" alt="Lisa"
+                                class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                        </div>
+                        <div class="flex gap-1 mb-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                        </div>
+                        <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                            "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                            social
+                            media content that significantly boosted our engagement."
+                        </p>
+                        <div class="mt-auto">
+                            <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                            <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div
+                        class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                        <div class="absolute -left-4 -top-2">
+                            <img src="https://i.pravatar.cc/100?u=david" alt="David"
+                                class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                        </div>
+                        <div class="flex gap-1 mb-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                        </div>
+                        <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                            "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                            social
+                            media content that significantly boosted our engagement."
+                        </p>
+                        <div class="mt-auto">
+                            <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                            <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div
+                        class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                        <div class="absolute -left-4 -top-2">
+                            <img src="https://i.pravatar.cc/100?u=emma" alt="Emma"
+                                class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                        </div>
+                        <div class="flex gap-1 mb-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                            <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                        </div>
+                        <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                            "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
+                            social
+                            media content that significantly boosted our engagement."
+                        </p>
+                        <div class="mt-auto">
+                            <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                            <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- ADD THESE SCRIPTS BEFORE YOUR CLOSING </body> TAG           -->
+<!-- ============================================================ -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+<script>
+    // First slider — Right to Left (RTL)
+    var splide1 = new Splide('#splide1', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        perPage: 3,
+        gap: '24px',
+        arrows: false,
+        pagination: false,
+        autoScroll: {
+            speed: 1,
+            direction: 'rtl',
+            pauseOnHover: true,
+        },
+        breakpoints: {
+            768: {
+                perPage: 1,
+                focus: 'center',
+            }
+        }
+    });
+    splide1.mount({ AutoScroll: SplideAutoScroll });
+
+    // Second slider — Left to Right (LTR)
+    var splide2 = new Splide('#splide2', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        perPage: 3,
+        gap: '24px',
+        arrows: false,
+        pagination: false,
+        autoScroll: {
+            speed: 1,
+            direction: 'ltr',
+            pauseOnHover: true,
+        },
+        breakpoints: {
+            768: {
+                perPage: 1,
+                focus: 'center',
+            }
+        }
+    });
+    splide2.mount({ AutoScroll: SplideAutoScroll });
+</script>
+
+<!-- ============================================================ -->
+<!-- ADD THIS CSS IN YOUR <head> TAG                             -->
+<!-- ============================================================ -->
+<!--
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+<style>
+    /* Hide default splide arrows and dots */
+    #splide1 .splide__arrows,
+    #splide1 .splide__pagination,
+    #splide2 .splide__arrows,
+    #splide2 .splide__pagination {
+        display: none !important;
+    }
+
+    /* Add left padding on each slide so avatar doesn't get clipped */
+    #splide1 .splide__slide,
+    #splide2 .splide__slide {
+        padding: 10px 0 10px 20px;
+    }
+</style>
+-->
+
+
+
+
+<!-- feedback-carousel -->
+<section class="bg-[#0a0a0a] py-20 px-6 overflow-hidden">
+    <div class="container mx-auto mb-12 text-center">
+        <h2 class="text-[#FF7A3B] font-anton text-[20px] tracking-wider uppercase mb-4">Client Feedback</h2>
+        <p class="text-white text-[32px] md:text-[56px] font-light leading-tight tracking-tight">
+            What clients say about working with me
+        </p>
+    </div>
+    <!-- First auto scroll section -->
+    <div class="flex flex-wrap md:flex-nowrap justify-center gap-25 px-4 md:px-20">
+
+        <div
+            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+            <div class="absolute -left-15 -top-2">
+                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+            </div>
+            <div class="flex gap-1 mb-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+            </div>
+            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning social
+                media content that significantly boosted our engagement."
+            </p>
+            <div class="mt-auto">
+                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+            </div>
+        </div>
+
+        <div
+            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+            <div class="absolute -left-15 -top-2">
+                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+            </div>
+            <div class="flex gap-1 mb-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+            </div>
+            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning social
+                media content that significantly boosted our engagement."
+            </p>
+            <div class="mt-auto">
+                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+            </div>
+        </div>
+
+        <div
+            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+            <div class="absolute -left-15 -top-2">
+                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+            </div>
+            <div class="flex gap-1 mb-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+            </div>
+            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning social
+                media content that significantly boosted our engagement."
+            </p>
+            <div class="mt-auto">
+                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+            </div>
+        </div>
+
+
+        <div
+            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+            <div class="absolute -left-15 -top-2">
+                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+            </div>
+            <div class="flex gap-1 mb-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+            </div>
+            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning social
+                media content that significantly boosted our engagement."
+            </p>
+            <div class="mt-auto">
+                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Second auto scroll section -->
+    <div class="flex flex-wrap md:flex-nowrap justify-center gap-25 px-4 md:px-20 pt-20">
+
+        <div
+            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+            <div class="absolute -left-15 -top-2">
+                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+            </div>
+            <div class="flex gap-1 mb-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+            </div>
+            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning social
+                media content that significantly boosted our engagement."
+            </p>
+            <div class="mt-auto">
+                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+            </div>
+        </div>
+
+        <div
+            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+            <div class="absolute -left-15 -top-2">
+                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+            </div>
+            <div class="flex gap-1 mb-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+            </div>
+            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning social
+                media content that significantly boosted our engagement."
+            </p>
+            <div class="mt-auto">
+                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+            </div>
+        </div>
+
+        <div
+            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+            <div class="absolute -left-15 -top-2">
+                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+            </div>
+            <div class="flex gap-1 mb-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+            </div>
+            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning social
+                media content that significantly boosted our engagement."
+            </p>
+            <div class="mt-auto">
+                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+            </div>
+        </div>
+
+
+        <div
+            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+            <div class="absolute -left-15 -top-2">
+                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+            </div>
+            <div class="flex gap-1 mb-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+            </div>
+            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning social
+                media content that significantly boosted our engagement."
+            </p>
+            <div class="mt-auto">
+                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
+                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Works – Projects Section</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #0d0d0d;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ───── Section Wrapper ───── */
+        .works-section {
+            padding: 72px 24px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ───── Top Label ───── */
+        .works-label {
+            color: #c8a84b;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        /* ───── Heading ───── */
+        .works-heading {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(22px, 3.5vw, 40px);
+            font-weight: 700;
+            color: #f0ede6;
+            text-align: center;
+            line-height: 1.22;
+            max-width: 700px;
+            margin: 0 auto 36px;
+        }
+
+        /* ───── Filter Buttons ───── */
+        .filter-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .fbtn {
+            padding: 8px 20px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1.5px solid transparent;
+            background: #1e1e1e;
+            color: #888;
+            font-family: 'Inter', sans-serif;
+            transition: background 0.2s, color 0.2s, border-color 0.2s;
+            white-space: nowrap;
+        }
+
+        .fbtn.active,
+        .fbtn:hover {
+            background: #c8a84b;
+            color: #0d0d0d;
+            border-color: #c8a84b;
+        }
+
+        /* ───── Video Block ───── */
+        .video-block {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            margin-bottom: 56px;
+            aspect-ratio: 16 / 6.2;
+            cursor: pointer;
+            background: #111;
+        }
+
+        .video-block .vb-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Fallback placeholder bg when no real image */
+        .video-block .vb-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, #141414 0%, #1e1a0a 40%, #141414 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vb-watermark {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(36px, 8vw, 90px);
+            font-weight: 800;
+            color: rgba(200, 168, 75, 0.08);
+            letter-spacing: -2px;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .video-block .vb-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.42);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+
+        .video-block:hover .vb-overlay {
+            background: rgba(0, 0, 0, 0.55);
+        }
+
+        .play-btn {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            border: 2px solid rgba(255, 255, 255, 0.45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .video-block:hover .play-btn {
+            transform: scale(1.08);
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        .play-btn::after {
+            content: '';
+            border-left: 22px solid #fff;
+            border-top: 13px solid transparent;
+            border-bottom: 13px solid transparent;
+            margin-left: 5px;
+        }
+
+        .vb-top-left {
+            position: absolute;
+            top: 18px;
+            left: 24px;
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.45);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        .vb-top-right {
+            position: absolute;
+            top: 18px;
+            right: 24px;
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.35);
+            letter-spacing: 0.08em;
+        }
+
+        .vb-bottom-left {
+            position: absolute;
+            bottom: 28px;
+            left: 28px;
+        }
+
+        .vb-bottom-left .vbt {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(16px, 2.5vw, 26px);
+            font-weight: 700;
+            color: #f0ede6;
+            margin-bottom: 6px;
+        }
+
+        .vb-bottom-left .vbs {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.55);
+        }
+
+        .vb-bottom-right {
+            position: absolute;
+            bottom: 28px;
+            right: 24px;
+            font-size: 9px;
+            color: rgba(255, 255, 255, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* ───── Project Grid ───── */
+        .proj-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width: 900px) {
+            .proj-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .proj-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ───── Project Card ───── */
+        .proj-card {
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: opacity 0.25s;
+        }
+
+        .proj-card.hidden {
+            display: none;
+        }
+
+        .proj-card-img {
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 12px;
+            aspect-ratio: 4 / 3;
+            position: relative;
+        }
+
+        .proj-card-img-inner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.4s ease;
+        }
+
+        .proj-card:hover .proj-card-img-inner {
+            transform: scale(1.04);
+        }
+
+        /* Real image inside card */
+        .proj-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .proj-card:hover .proj-card-img img {
+            transform: scale(1.04);
+        }
+
+        /* Category border bottom on hover */
+        .proj-card-img::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #c8a84b;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .proj-card:hover .proj-card-img::after {
+            transform: scaleX(1);
+        }
+
+        .proj-card-cat {
+            font-size: 10px;
+            color: #c8a84b;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            margin-bottom: 5px;
+        }
+
+        .proj-card-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            color: #f0ede6;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            line-height: 1.5;
+        }
+
+        .proj-card-date {
+            font-size: 10px;
+            color: #444;
+            margin-top: 4px;
+        }
+
+        /* ───── Placeholder card visuals ───── */
+        /* Row 1 */
+        .ph-1 {
+            background: linear-gradient(135deg, #0e1620 0%, #1c2b40 100%);
+        }
+
+        .ph-2 {
+            background: linear-gradient(135deg, #131020 0%, #231e38 100%);
+        }
+
+        .ph-3 {
+            background: linear-gradient(135deg, #1a1008 0%, #2e1e10 100%);
+        }
+
+        .ph-4 {
+            background: linear-gradient(135deg, #0c1a0e 0%, #182a1c 100%);
+        }
+
+        /* Row 2 */
+        .ph-5 {
+            background: linear-gradient(135deg, #1c0e00 0%, #2e1800 100%);
+        }
+
+        .ph-6 {
+            background: linear-gradient(135deg, #080808 0%, #141414 100%);
+        }
+
+        .ph-7 {
+            background: linear-gradient(135deg, #1a0d00 0%, #2c1800 100%);
+        }
+
+        .ph-8 {
+            background: linear-gradient(135deg, #1c0a28 0%, #2e1040 100%);
+        }
+
+        .ph-inner {
+            text-align: center;
+            padding: 16px;
+            pointer-events: none;
+        }
+
+        .ph-tag {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 6px;
+        }
+
+        .ph-name {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .ph-divider {
+            height: 2px;
+            margin: 8px auto;
+            border-radius: 1px;
+        }
+
+        .ph-sub {
+            font-size: 9px;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="works-section">
+
+        <!-- Label -->
+        <p class="works-label">My Works</p>
+
+        <!-- Heading -->
+        <h2 class="works-heading">
+            Explore my creative journey through motion graphics, explainer videos, and graphic design projects crafted
+            for brands worldwide
+        </h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-row">
+            <button class="fbtn active" data-filter="all">All Works</button>
+            <button class="fbtn" data-filter="motion">Motion Graphics</button>
+            <button class="fbtn" data-filter="graphic">Graphic Design</button>
+            <button class="fbtn" data-filter="explainer">Explainer Video</button>
+            <button class="fbtn" data-filter="brand">Brand Films</button>
+            <button class="fbtn" data-filter="social">Social Media Video</button>
+        </div>
+
+        <!-- Video / Showreel Block -->
+        <div class="video-block" onclick="playVideo()">
+            <!--
+      To use a real thumbnail image, replace the .vb-placeholder div below with:
+      <img class="vb-bg" src="assets/images/video-thumb.png" alt="Showreel" />
+    -->
+            <div class="vb-placeholder">
+                <span class="vb-watermark">SHOWREEL</span>
+            </div>
+
+            <div class="vb-overlay">
+                <div class="play-btn"></div>
+            </div>
+
+            <span class="vb-top-left">Motion-Graphics</span>
+            <span class="vb-top-right">No 01</span>
+
+            <div class="vb-bottom-left">
+                <div class="vbt">Full Showreel — Watch Now</div>
+                <div class="vbs">A curated collection of my best motion design work</div>
+            </div>
+
+            <span class="vb-bottom-right">2D&amp;3D Selected Works</span>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="proj-grid" id="projGrid">
+
+            <!-- Card 1 – Tech Startup Explainer -->
+            <a href="case-study-details.html" class="proj-card" data-cat="motion">
+                <div class="proj-card-img">
+                    <!--
+          Replace .proj-card-img-inner with:
+          <img src="assets/images/service-image-1.webp" alt="Tech Startup Explainer" />
+        -->
+                    <div class="proj-card-img-inner ph-1">
+                        <div class="ph-inner">
+                            <div class="ph-tag" style="color:#6ea8f8;">Tech Startup</div>
+                            <div class="ph-name" style="font-size:15px;color:#b8d4f8;">EXPLAINER</div>
+                            <div class="ph-divider" style="width:36px;background:#4a80d0;"></div>
+                            <div class="ph-sub" style="color:#6ea8f8;">Motion Graphics</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card-cat">Motion Graphics</div>
+                <div class="proj-card-title">Tech Startup Explainer</div>
+                <div class="proj-card-date">02/2025</div>
+            </a>
+
+            <!-- Card 2 – E-Commerce Brand Intro -->
+            <a href="case-study-details.html" class="proj-card" data-cat="motion">
+                <div class="proj-card-img">
+                    <!--
+          Replace .proj-card-img-inner with:
+          <img src="assets/images/service-image-2.webp" alt="E-Commerce Brand Intro" />
+        -->
+                    <div class="proj-card-img-inner ph-2">
+                        <div class="ph-inner">
+                            <div class="ph-tag" style="color:#a090e0;">Industrial</div>
+                            <div class="ph-name" style="font-size:15px;color:#d0c8f8;">Gearbox</div>
+                            <div class="ph-divider" style="width:36px;background:#7060c0;"></div>
+                            <div class="ph-sub" style="color:#a090e0;">Product Vis</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card-cat">Motion Graphics</div>
+                <div class="proj-card-title">E-Commerce Brand Intro</div>
+                <div class="proj-card-date">02/2025</div>
+            </a>
+
+            <!-- Card 3 – Minimal Brand Identity -->
+            <a href="case-study-details.html" class="proj-card" data-cat="brand">
+                <div class="proj-card-img">
+                    <!--
+          Replace .proj-card-img-inner with:
+          <img src="assets/images/service-image-3.webp" alt="Minimal Brand Identity" />
+        -->
+                    <div class="proj-card-img-inner ph-3">
+                        <div class="ph-inner">
+                            <div class="ph-tag" style="color:#e09060;">Book Cover</div>
+                            <div class="ph-name" style="font-size:14px;color:#f0d0b0;">Brand Identity</div>
+                            <div class="ph-divider" style="width:36px;background:#c07040;"></div>
+                            <div class="ph-sub" style="color:#e09060;">Minimal Design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card-cat">Motion Graphics</div>
+                <div class="proj-card-title">Minimal Brand Identity</div>
+                <div class="proj-card-date">03/2025</div>
+            </a>
+
+            <!-- Card 4 – Instagram Reel Product Launch -->
+            <a href="case-study-details.html" class="proj-card" data-cat="social">
+                <div class="proj-card-img">
+                    <!--
+          Replace .proj-card-img-inner with:
+          <img src="assets/images/service-image-4.webp" alt="Instagram Reel Product Launch" />
+        -->
+                    <div class="proj-card-img-inner ph-4">
+                        <div class="ph-inner">
+                            <div class="ph-tag" style="color:#70c860;">Instagram</div>
+                            <div class="ph-name" style="font-size:14px;color:#b0e890;">Reel</div>
+                            <div class="ph-divider" style="width:36px;background:#50a040;"></div>
+                            <div class="ph-sub" style="color:#70c860;">Product Launch</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card-cat">Motion Graphics</div>
+                <div class="proj-card-title">Instagram Reel – Product Launch</div>
+                <div class="proj-card-date">03/2025</div>
+            </a>
+
+            <!-- Card 5 – Poster Design (Burger) -->
+            <a href="case-study-details.html" class="proj-card" data-cat="graphic">
+                <div class="proj-card-img">
+                    <!--
+          Replace .proj-card-img-inner with:
+          <img src="assets/images/poster-design.webp" alt="Poster Design" />
+        -->
+                    <div class="proj-card-img-inner ph-5">
+                        <div class="ph-inner">
+                            <div class="ph-tag" style="color:#f0a020;">408×364 Hug</div>
+                            <div class="ph-name" style="font-size:22px;color:#f8c840;letter-spacing:-0.5px;">BURGER
+                            </div>
+                            <div style="font-size:10px;color:#e08020;margin-top:4px;font-weight:700;">50% OFF</div>
+                            <div class="ph-sub" style="color:#c07010;margin-top:4px;">Slice of Happiness</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card-cat">Graphic Design</div>
+                <div class="proj-card-title">Poster Design</div>
+                <div class="proj-card-date">03/2026</div>
+            </a>
+
+            <!-- Card 6 – Logo Design (Chai Ritual) -->
+            <a href="case-study-details.html" class="proj-card" data-cat="graphic">
+                <div class="proj-card-img">
+                    <!--
+          Replace .proj-card-img-inner with:
+          <img src="assets/images/logo-design.webp" alt="Logo Design" />
+        -->
+                    <div class="proj-card-img-inner ph-6">
+                        <div class="ph-inner">
+                            <div
+                                style="font-family:Georgia,serif;font-size:22px;font-style:italic;color:rgba(255,255,255,0.75);line-height:1.15;">
+                                Chai</div>
+                            <div
+                                style="font-size:9px;letter-spacing:0.35em;color:rgba(255,255,255,0.35);text-transform:uppercase;margin-top:4px;">
+                                Ritual</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card-cat">Graphic Design</div>
+                <div class="proj-card-title">Logo Design</div>
+                <div class="proj-card-date">03/2026</div>
+            </a>
+
+            <!-- Card 7 – Food Poster Design (Noodles) -->
+            <a href="case-study-details.html" class="proj-card" data-cat="graphic">
+                <div class="proj-card-img">
+                    <!--
+          Replace .proj-card-img-inner with:
+          <img src="assets/images/food-poster.webp" alt="Food Poster Design" />
+        -->
+                    <div class="proj-card-img-inner ph-7">
+                        <div class="ph-inner">
+                            <div class="ph-name" style="font-size:18px;color:#f0a030;letter-spacing:0.05em;">NOODLES
+                            </div>
+                            <div style="font-size:9px;color:#c07020;margin-top:5px;">Flavor that Hits Your Heart</div>
+                            <div style="font-size:11px;color:#e08020;margin-top:4px;font-weight:700;">Free Delivery ·
+                                -30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card-cat">Graphic Design</div>
+                <div class="proj-card-title">Food Poster Design</div>
+                <div class="proj-card-date">03/2026</div>
+            </a>
+
+            <!-- Card 8 – Cover Design (Summer Camp) -->
+            <a href="case-study-details.html" class="proj-card" data-cat="graphic">
+                <div class="proj-card-img">
+                    <!--
+          Replace .proj-card-img-inner with:
+          <img src="assets/images/cover-design.webp" alt="Cover Design" />
+        -->
+                    <div class="proj-card-img-inner ph-8">
+                        <div class="ph-inner">
+                            <div class="ph-tag" style="color:#c080e0;">Summer</div>
+                            <div class="ph-name" style="font-size:18px;color:#f0c0ff;">Camp</div>
+                            <div class="ph-divider" style="width:30px;background:#a060c8;"></div>
+                            <div class="ph-sub" style="color:#c080e0;">Event Poster</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card-cat">Graphic Design</div>
+                <div class="proj-card-title">Cover Design</div>
+                <div class="proj-card-date">03/2026</div>
+            </a>
+
+        </div><!-- /proj-grid -->
+
+    </section>
+
+    <script>
+        // ── Filter Logic ──
+        document.addEventListener('DOMContentLoaded', () => {
+            const btns = document.querySelectorAll('.fbtn');
+            const cards = document.querySelectorAll('.proj-card');
+
+            btns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.dataset.filter;
+
+                    cards.forEach(card => {
+                        const match = filter === 'all' || card.dataset.cat === filter;
+                        if (match) {
+                            card.classList.remove('hidden');
+                            card.animate(
+                                [{ opacity: 0, transform: 'scale(0.95)' },
+                                { opacity: 1, transform: 'scale(1)' }],
+                                { duration: 280, easing: 'ease-out' }
+                            );
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+
+        // ── Play Video ──
+        function playVideo() {
+            // Replace with your actual video URL or embed logic
+            // Example: window.open('https://youtu.be/your-video-id', '_blank');
+            alert('Play video here — replace this with your video URL or embed logic.');
+        }
+    </script>
+
+</body>
+
+</html>

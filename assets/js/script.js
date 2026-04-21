@@ -98,3 +98,131 @@ window.addEventListener("load", () => {
     firstContent.style.maxHeight = firstContent.scrollHeight + "px";
     firstContent.classList.remove("max-h-0");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    new Splide("#feedback-carousel", {
+        type: "loop",
+        drag: "free",
+        focus: "center",
+        perPage: 4, // Adjust based on screen size
+        gap: "30px",
+        // autoplay: true,
+        interval: 1000,
+        pauseOnHover: false,
+        arrows: false,
+        pagination: true,
+        autoScroll: {
+            speed: 1,
+        },
+        breakpoints: {
+            768: { perPage: 1 },
+        },
+    }).mount(window.splide.Extensions);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    new Splide("#feedback-carousel2", {
+        type: "loop",
+        drag: "free",
+        focus: "center",
+        perPage: 4, // Adjust based on screen size
+        gap: "30px",
+        // autoplay: true,
+        interval: 1000,
+        pauseOnHover: false,
+        arrows: false,
+        pagination: true,
+        autoScroll: {
+            speed: -1,
+        },
+        breakpoints: {
+            768: { perPage: 1 },
+        },
+    }).mount(window.splide.Extensions);
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     new Splide("#feedback-carousel", {
+//         type: "loop",
+//         drag: "free",
+//         focus: "center",
+//         perPage: 3, // Adjust based on screen size
+//         autoScroll: {
+//             speed: 1,
+//         },
+//         breakpoints: {
+//             768: { perPage: 1 },
+//         },
+//     }).mount(window.splide.Extensions);
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     var splide = new Splide("#feedback-carousel", {
+//         type: "loop",
+//         drag: "free",
+//         focus: "center",
+//         perPage: 5,
+//         gap: "30px",
+//         autoplay: true,
+//         interval: 2000,
+//         pauseOnHover: false,
+//         arrows: false,
+//         pagination: true,
+//         breakpoints: {
+//             1024: {
+//                 perPage: 5,
+//             },
+//             768: {
+//                 perPage: 1,
+//                 padding: "10%",
+//             },
+//         },
+//     });
+//     splide.mount();
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projectItems = document.querySelectorAll(".project-item");
+
+    if (filterButtons.length > 0 && projectItems.length > 0) {
+        filterButtons.forEach((button) => {
+            button.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                filterButtons.forEach((btn) => {
+                    btn.classList.remove(
+                        "bg-[#7E5EFF]",
+                        "text-white",
+                        "active",
+                    );
+                    btn.classList.add("bg-[#F3F4F4]", "text-[#555555]");
+                });
+                button.classList.add("bg-[#7E5EFF]", "text-white", "active");
+                button.classList.remove("bg-[#F3F4F4]", "text-[#555555]");
+
+                const filterValue = button.getAttribute("data-filter");
+
+                projectItems.forEach((item) => {
+                    const category = item.getAttribute("data-category");
+
+                    if (filterValue === "all" || category === filterValue) {
+                        item.style.display = "block";
+                        item.animate(
+                            [
+                                { opacity: 0, transform: "scale(0.95)" },
+                                { opacity: 1, transform: "scale(1)" },
+                            ],
+                            {
+                                duration: 300,
+                                easing: "ease-out",
+                            },
+                        );
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    }
+});
