@@ -46,229 +46,193 @@
     </div>
 
 
-    <section class="md:py-0 lg:py-0 lg:mb-0 px-4 md:px-0">
-        <div class="container mx-auto pt-20 md:pt-25 text-center">
+    <section class="px-4 md:px-0 pt-[80px] md:pt-[140px]">
+        <div class="container mx-auto text-center">
 
-            <div class="text-center pt-0 md:pt-5">
-                <p class="text-[#FF7A3B] font-anton text-xs md:text-[24px] uppercase tracking-[0.2em] mb-4">
-                    My Works
-                </p>
+            <!-- Header -->
+            <p class="text-[#FF7A3B] font-anton-sc text-xs md:text-[24px] uppercase mb-4">
+                My Works
+            </p>
+            <h2 class="text-[24px] md:text-[32px] text-[#FFF] leading-[1.15] max-w-4xl mx-auto mb-12">
+                A curated collection of UX projects focused on solving real user problems, improving product
+                performance.
+            </h2>
 
-                <h2 class="text-[32px] md:text-[32px] text-gray-400 leading-[1.15] max-w-4xl mx-auto mb-12">
-                    A curated collection of UX projects focused on solving real user problems, improving product
-                    performance.
-                </h2>
+            <!-- Filter Buttons -->
+            <div class="flex justify-center w-full mb-10">
+                <div
+                    class="flex items-center gap-3 overflow-x-auto pb-4 whitespace-nowrap [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
 
-                <div class="flex justify-center w-full">
-                    <div class="flex items-center gap-4 overflow-x-auto pb-4 scrollbar-hide whitespace-nowrap">
-                        <a href="#" data-filter="all"
-                            class="filter-btn active px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white bg-[#FF7A3B]">All
-                            Works</a>
+                    <a href="#" data-filter="all"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white bg-[#FF7A3B] border border-[#FF7A3B] transition-all duration-200">
+                        All Works
+                    </a>
+                    <a href="#" data-filter="motion"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white border border-white/30 hover:bg-[#FF7A3B] hover:border-[#FF7A3B] transition-all duration-200">
+                        Motion Graphics
+                    </a>
+                    <a href="#" data-filter="graphic"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white border border-white/30 hover:bg-[#FF7A3B] hover:border-[#FF7A3B] transition-all duration-200">
+                        Graphic Design
+                    </a>
+                    <a href="#" data-filter="explainer-app"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white border border-white/30 hover:bg-[#FF7A3B] hover:border-[#FF7A3B] transition-all duration-200">
+                        Explainer Video Apps
+                    </a>
+                    <a href="#" data-filter="explainer"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white border border-white/30 hover:bg-[#FF7A3B] hover:border-[#FF7A3B] transition-all duration-200">
+                        Explainer Video
+                    </a>
+                    <a href="#" data-filter="social"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white border border-white/30 hover:bg-[#FF7A3B] hover:border-[#FF7A3B] transition-all duration-200">
+                        Social Media Video
+                    </a>
 
-                        <a href="#" data-filter="dashboard"
-                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white hover:bg-[#FF7A3B] hover:text-white border border-amber-100">Motion
-                            Graphics</a>
-
-                        <a href="#" data-filter="saas"
-                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white hover:bg-[#FF7A3B] hover:text-white transition-all border border-white">Graphic
-                            Design</a>
-
-                        <a href="#" data-filter="mobile"
-                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white hover:bg-[#FF7A3B] hover:text-white transition-all border border-white">Explainer
-                            Video
-                            Apps</a>
-
-                        <a href="#" data-filter="web"
-                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white hover:bg-[#FF7A3B] hover:text-white transition-all border border-white">Explainer
-                            Video</a>
-
-                        <a href="#" data-filter="web"
-                            class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white hover:bg-[#FF7A3B] hover:text-white transition-all border border-white">Social
-                            Media Video</a>
-                    </div>
                 </div>
             </div>
-
             <!-- Video Section -->
-            <div class="py-[16px] md:py-[80px] px-4 md:px-0">
-                <div class="container mx-auto">
-                    <div class="justify-center mx-auto mb-12 overflow-hidden rounded-[20px] shadow-sm relative group md:p-0"
-                        id="video-container">
-                        <img src="assets/images/video-thumb.png" alt="Featured Project" class="w-full h-auto block"
-                            id="video-thumbnail">
+            <!-- <div class="py-[16px] md:py-[80px] px-4 md:px-0"> -->
+            <div class="container mx-auto">
+                <div class="justify-center mx-auto mb-12 overflow-hidden rounded-[20px] shadow-sm relative group md:p-0"
+                    id="video-container">
+                    <img src="assets/images/video-thumb.png" alt="Featured Project" class="w-full h-auto block"
+                        id="video-thumbnail">
 
-                        <button onclick="playVideo()"
-                            class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all duration-300"
-                            id="play-button">
-                            <div
-                                class="w-full max-w-[45px] rounded-full flex items-center justify-center shadow-xl transform group-hover:scale-102 transition-transform cursor-pointer">
-                                <img class="w-full aspect-45/45" src="assets/images/home-img7.svg" alt="Play Icon">
-                            </div>
-                        </button>
+                    <button onclick="playVideo()"
+                        class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all duration-300"
+                        id="play-button">
+                        <div
+                            class="w-full max-w-[45px] rounded-full flex items-center justify-center shadow-xl transform group-hover:scale-102 transition-transform cursor-pointer">
+                            <img class="w-full aspect-45/45" src="assets/images/home-img7.svg" alt="Play Icon">
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+            <!-- </div> -->
+
+            <!-- Project Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 py-5">
+
+                <!-- Motion Graphics 1 -->
+                <a href="project-details.html" data-category="motion"
+                    class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img1.png" alt="Tech Startup Explainer"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
                     </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[16px]">Motion
+                        Graphics</p>
+                    <h3 class="text-[#FFF] text-[14px] md:text-[24px] font-anton-sc uppercase my-1">
+                        Tech Startup Explainer</h3>
+                    <p class="text-[#FFF] text-[11px] md:text-[16px] uppercase">(2026)</p>
+                </a>
 
-                </div>
+                <!-- Motion Graphics 2 -->
+                <a href="project-details.html" data-category="motion"
+                    class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img2.png" alt="Brand Animation"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[16px]">Motion
+                        Graphics</p>
+                    <h3 class="text-[#FFF] text-[14px] md:text-[24px] font-anton-sc uppercase my-1">
+                        E-Commerce Brand Intro</h3>
+                    <p class="text-[#FFF] text-[11px] md:text-[16px] uppercase">(2026)</p>
+                </a>
+
+                <!-- Graphic Design 1 -->
+                <a href="project-details.html" data-category="graphic"
+                    class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img3.png" alt="Visual Identity"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[16px]">Graphic
+                        Design</p>
+                    <h3 class="text-[#FFF] text-[14px] md:text-[24px] font-anton-sc uppercase my-1">
+                        Minimal Brand Identity</h3>
+                    <p class="text-[#FFF] text-[11px] md:text-[16px] uppercase">(2026)</p>
+                </a>
+
+                <!-- Graphic Design 2 -->
+                <a href="project-details.html" data-category="graphic"
+                    class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img4.png" alt="Poster Design"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[16px]">Graphic
+                        Design</p>
+                    <h3 class="text-[#FFF] text-[14px] md:text-[24px] font-anton-sc uppercase my-1">
+                        Instagram Reel - Product Launch</h3>
+                    <p class="text-[#FFF] text-[11px] md:text-[16px] uppercase">(2026)</p>
+                </a>
+
+                <!-- Explainer Video Apps -->
+                <a href="project-details.html" data-category="explainer-app"
+                    class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img5.png" alt="App Explainer"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[16px]">Explainer
+                        Video Apps</p>
+                    <h3 class="text-[#FFF] text-[14px] md:text-[24px] font-anton-sc uppercase my-1">
+                        Poster Design</h3>
+                    <p class="text-[#FFF] text-[11px] md:text-[16px] uppercase">(2026)</p>
+                </a>
+
+                <!-- Explainer Video -->
+                <a href="project-details.html" data-category="explainer"
+                    class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img6.png" alt="Product Explainer"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[16px]">Explainer
+                        Video</p>
+                    <h3 class="text-[#FFF] text-[14px] md:text-[24px] font-anton-sc uppercase my-1">
+                        Logo Design</h3>
+                    <p class="text-[#FFF] text-[11px] md:text-[16px] uppercase">(2026)</p>
+                </a>
+
+                <!-- Social Media Video 1 -->
+                <a href="project-details.html" data-category="social"
+                    class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img7.png" alt="Instagram Reel"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[16px]">Social
+                        Media Video</p>
+                    <h3 class="text-[#FFF] text-[14px] md:text-[24px] font-anton-sc uppercase my-1">
+                        Food Poster Design</h3>
+                    <p class="text-[#FFF] text-[11px] md:text-[16px] uppercase">(2026)</p>
+                </a>
+
+                <!-- Social Media Video 2 -->
+                <a href="project-details.html" data-category="social"
+                    class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img8.png" alt="TikTok Ad"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[16px]">Social
+                        Media Video</p>
+                    <h3 class="text-[#FFF] text-[14px] md:text-[24px] font-anton-sc uppercase my-1">
+                        Cover Design</h3>
+                    <p class="text-[#FFF] text-[11px] md:text-[16px] uppercase">(2026)</p>
+                </a>
+
             </div>
-
-            <div class="w-full py-[10px] md:py-[20px] border border-white/5">
-
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                    <a href="#" data-category="dashboard"
-                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
-                        <div class="rounded-xl overflow-hidden mb-4">
-                            <img src="assets/images/project-img1.png" alt="Blez"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
-                        </div>
-                        <p
-                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            Motion
-                            Graphics</p>
-                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
-                            Tech
-                            Startup Explainer
-                        </h3>
-                        <p
-                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            (2026)</p>
-                    </a>
-
-                    <a href="#" data-category="dashboard"
-                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
-                        <div class="rounded-xl overflow-hidden mb-4">
-                            <img src="assets/images/project-img2.png" alt="Blez"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
-                        </div>
-                        <p
-                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            Motion
-                            Graphics</p>
-                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
-                            Tech
-                            Startup Explainer
-                        </h3>
-                        <p
-                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            (2026)</p>
-                    </a>
-                    <a href="#" data-category="dashboard"
-                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
-                        <div class="rounded-xl overflow-hidden mb-4">
-                            <img src="assets/images/project-img3.png" alt="Blez"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
-                        </div>
-                        <p
-                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            Motion
-                            Graphics</p>
-                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
-                            Tech
-                            Startup Explainer
-                        </h3>
-                        <p
-                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            (2026)</p>
-                    </a>
-                    <a href="#" data-category="dashboard"
-                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
-                        <div class="rounded-xl overflow-hidden mb-4">
-                            <img src="assets/images/project-img4.png" alt="Blez"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
-                        </div>
-                        <p
-                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            Motion
-                            Graphics</p>
-                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
-                            Tech
-                            Startup Explainer
-                        </h3>
-                        <p
-                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            (2026)</p>
-                    </a>
-                    <a href="#" data-category="dashboard"
-                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
-                        <div class="rounded-xl overflow-hidden mb-4">
-                            <img src="assets/images/project-img5.png" alt="Blez"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
-                        </div>
-                        <p
-                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            Motion
-                            Graphics</p>
-                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
-                            Tech
-                            Startup Explainer
-                        </h3>
-                        <p
-                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            (2026)</p>
-                    </a>
-
-                    <a href="#" data-category="dashboard"
-                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
-                        <div class="rounded-xl overflow-hidden mb-4">
-                            <img src="assets/images/project-img6.png" alt="Blez"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
-                        </div>
-                        <p
-                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            Motion
-                            Graphics</p>
-                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
-                            Tech
-                            Startup Explainer
-                        </h3>
-                        <p
-                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            (2026)</p>
-                    </a>
-                    <a href="#" data-category="dashboard"
-                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
-                        <div class="rounded-xl overflow-hidden mb-4">
-                            <img src="assets/images/project-img7.png" alt="Blez"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
-                        </div>
-                        <p
-                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            Motion
-                            Graphics</p>
-                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
-                            Tech
-                            Startup Explainer
-                        </h3>
-                        <p
-                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            (2026)</p>
-                    </a>
-                    <a href="#" data-category="dashboard"
-                        class="project-item group cursor-pointer max-w-[410px] overflow-hidden">
-                        <div class="rounded-xl overflow-hidden mb-4">
-                            <img src="assets/images/project-img8.png" alt="Blez"
-                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
-                        </div>
-                        <p
-                            class="text-[#FF7A3B] text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            Motion
-                            Graphics</p>
-                        <h3 class="text-white text-[16px] md:text-[24px] font-bold uppercase tracking-widest text-left">
-                            Tech
-                            Startup Explainer
-                        </h3>
-                        <p
-                            class="text-white text-[12px] md:text-[16px] font-medium uppercase tracking-widest text-left">
-                            (2026)</p>
-                    </a>
-                </div>
-            </div>
-
-
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="px-4 sm:px-6 md:px-10 overflow-hidden rounded-[16px] ">
-        <div class="max-w-[1142px] mx-auto py-[40px] md:py-[88px]">
+    <section class="px-4 sm:px-6 md:px-10 py-[20px] md:py-[120px] overflow-hidden rounded-[16px]">
+        <div class="max-w-[1142px] mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-white">
 
                 <div class="flex flex-col items-center justify-center p-2 md:p-8 
@@ -329,17 +293,18 @@
             <div
                 class="relative overflow-hidden rounded-4xl bg-[linear-gradient(180deg,#FF7A3B_0%,#381200_100%)] px-8 py-16 md:py-24 text-center shadow-2xl">
                 <div class="relative z-10 flex flex-col items-center">
-                    <h2 class="text-[20px] md:text-[64px] font-clash-grotesk-bold text-white mb-6">
+                    <h2
+                        class="text-[20px] md:text-[64px] font-clash-grotesk-bold text-white mb-[8px] md:mb-[16px] leading-tight">
                         Not limited to video,<br>
                         I'm your creative comrade.
                     </h2>
 
-                    <p class="text-gray-200 text-[14px] md:text-[40px] font-light mb-10 max-w-2xl mx-auto opacity-90">
+                    <p class="text-gray-200 text-[14px] md:text-[40px] font-light mb-[16px] md:mb-[48px] opacity-90">
                         Got questions, project ideas, or just want to say hi? I'm all ears!
                     </p>
 
                     <button
-                        class="group flex justify-center items-center gap-3 px-8 py-3 rounded-full text-white text-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95 bg-[linear-gradient(90deg,#ea8a46_0%,#2f7365_100%)] border-2 border-[#5a4b42] mx-auto">
+                        class="group cursor-pointer flex justify-center items-center gap-3 px-8 py-3 rounded-full text-white text-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95 bg-[linear-gradient(90deg,#ea8a46_0%,#2f7365_100%)] border-2 border-[#5a4b42] mx-auto">
                         Get Started
                         <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none"
                             stroke="currentColor" viewBox="0 0 24 24">
@@ -357,7 +322,7 @@
     </section>
 
 
-
+    <!-- Footer -->
     <footer class="footer-container">
         <div class="footer-content">
 
@@ -376,6 +341,7 @@
 
         </div>
     </footer>
+
 
     <script src="assets/js/script.js"></script>
 </body>

@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
         drag: "free",
         focus: "center",
         perPage: 4, // Adjust based on screen size
-        gap: "30px",
+        gap: "60px",
         // autoplay: true,
         interval: 1000,
         pauseOnHover: false,
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
         drag: "free",
         focus: "center",
         perPage: 4, // Adjust based on screen size
-        gap: "30px",
+        gap: "60px",
         // autoplay: true,
         interval: 1000,
         pauseOnHover: false,
@@ -141,88 +141,89 @@ document.addEventListener("DOMContentLoaded", function () {
     }).mount(window.splide.Extensions);
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     new Splide("#feedback-carousel", {
-//         type: "loop",
-//         drag: "free",
-//         focus: "center",
-//         perPage: 3, // Adjust based on screen size
-//         autoScroll: {
-//             speed: 1,
-//         },
-//         breakpoints: {
-//             768: { perPage: 1 },
-//         },
-//     }).mount(window.splide.Extensions);
-// });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     var splide = new Splide("#feedback-carousel", {
-//         type: "loop",
-//         drag: "free",
-//         focus: "center",
-//         perPage: 5,
-//         gap: "30px",
-//         autoplay: true,
-//         interval: 2000,
-//         pauseOnHover: false,
-//         arrows: false,
-//         pagination: true,
-//         breakpoints: {
-//             1024: {
-//                 perPage: 5,
-//             },
-//             768: {
-//                 perPage: 1,
-//                 padding: "10%",
-//             },
-//         },
-//     });
-//     splide.mount();
-// });
-
+// Filter projects
 document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll(".filter-btn");
     const projectItems = document.querySelectorAll(".project-item");
 
-    if (filterButtons.length > 0 && projectItems.length > 0) {
-        filterButtons.forEach((button) => {
-            button.addEventListener("click", (e) => {
-                e.preventDefault();
+    filterButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+            e.preventDefault();
 
-                filterButtons.forEach((btn) => {
-                    btn.classList.remove(
-                        "bg-[#7E5EFF]",
-                        "text-white",
-                        "active",
-                    );
-                    btn.classList.add("bg-[#F3F4F4]", "text-[#555555]");
-                });
-                button.classList.add("bg-[#7E5EFF]", "text-white", "active");
-                button.classList.remove("bg-[#F3F4F4]", "text-[#555555]");
+            // Remove active style from all buttons
+            filterButtons.forEach((btn) => {
+                btn.classList.remove("bg-[#FF7A3B]", "border-[#FF7A3B]");
+                btn.classList.add("border-white/30");
+            });
 
-                const filterValue = button.getAttribute("data-filter");
+            // Add active style to clicked button
+            button.classList.add("bg-[#FF7A3B]", "border-[#FF7A3B]");
+            button.classList.remove("border-white/30");
 
-                projectItems.forEach((item) => {
-                    const category = item.getAttribute("data-category");
+            const filterValue = button.getAttribute("data-filter");
 
-                    if (filterValue === "all" || category === filterValue) {
-                        item.style.display = "block";
-                        item.animate(
-                            [
-                                { opacity: 0, transform: "scale(0.95)" },
-                                { opacity: 1, transform: "scale(1)" },
-                            ],
-                            {
-                                duration: 300,
-                                easing: "ease-out",
-                            },
-                        );
-                    } else {
-                        item.style.display = "none";
-                    }
-                });
+            projectItems.forEach((item) => {
+                const category = item.getAttribute("data-category");
+                const match = filterValue === "all" || category === filterValue;
+
+                if (match) {
+                    item.classList.remove("hidden");
+                } else {
+                    item.classList.add("hidden");
+                }
             });
         });
+    });
+});
+
+//video modal
+const modal = document.getElementById("videoModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalWrapper = document.getElementById("modalVideoWrapper");
+const modalClose = document.getElementById("modalClose");
+
+function openVideoModal(btn) {
+    const src = btn.getAttribute("data-video");
+    const title = btn.getAttribute("data-title") || "Video";
+
+    modalTitle.textContent = title;
+
+    let embedHTML = "";
+    if (src.includes("youtube.com") || src.includes("youtu.be")) {
+        const videoId = src.includes("youtu.be")
+            ? src.split("youtu.be/")[1].split("?")[0]
+            : new URL(src).searchParams.get("v");
+        embedHTML = `<iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}?autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+    } else if (src.includes("vimeo.com")) {
+        const videoId = src.split("vimeo.com/")[1];
+        embedHTML = `<iframe class="w-full h-full" src="https://player.vimeo.com/video/${videoId}?autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+    } else {
+        embedHTML = `<video class="w-full h-full" src="${src}" controls autoplay playsinline></video>`;
     }
+
+    modalWrapper.innerHTML = embedHTML;
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+    document.body.classList.add("overflow-hidden");
+}
+
+function closeVideoModal() {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+    modalWrapper.innerHTML = "";
+    document.body.classList.remove("overflow-hidden");
+}
+
+document.querySelectorAll(".play-btn").forEach((btn) => {
+    btn.addEventListener("click", () => openVideoModal(btn));
+});
+
+modalClose.addEventListener("click", closeVideoModal);
+
+modal.addEventListener("click", function (e) {
+    if (e.target === modal) closeVideoModal();
+});
+
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeVideoModal();
 });

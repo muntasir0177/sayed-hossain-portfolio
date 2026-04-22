@@ -99,7 +99,7 @@
                             </div>
                         </div>
                         <button
-                            class="group flex items-center gap-3 px-8 py-3 rounded-full text-white text-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95 bg-[linear-gradient(90deg,#ea8a46_0%,#2f7365_100%)] border-2 border-[#5a4b42]">
+                            class="group cursor-pointer flex items-center gap-3 px-8 py-3 rounded-full text-white text-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95 bg-[linear-gradient(90deg,#ea8a46_0%,#2f7365_100%)] border-2 border-[#5a4b42]">
                             See My Works
                             <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
@@ -126,7 +126,7 @@
     </section>
 
     <!-- Video Section -->
-    <section class="py-[26px] md:py-[130px] px-4 md:px-0">
+    <section class="py-[26px] md:py-[96px] px-4 md:px-0">
         <div class="container mx-auto">
             <div class="justify-center mx-auto mb-12 overflow-hidden rounded-[20px] shadow-sm relative group md:p-0"
                 id="video-container">
@@ -148,8 +148,8 @@
 
 
     <!-- About Section -->
-    <section class="px-4 sm:px-6 md:px-10 overflow-hidden rounded-[16px]">
-        <div class="max-w-[1142px] mx-auto py-[20px] md:py-[88px]">
+    <section class="px-4 sm:px-6 md:px-10 py-[20px] md:py-[120px] overflow-hidden rounded-[16px]">
+        <div class="max-w-[1142px] mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-white">
 
                 <div class="flex flex-col items-center justify-center p-2 md:p-8 
@@ -205,7 +205,7 @@
 
 
     <!-- Services Section -->
-    <section class="py-10 md:py-20 bg-[#0A0A0A]">
+    <section class="py-[20px] md:py-[148px]">
         <div class="container mx-auto px-4 md:px-8 lg:px-12">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
@@ -412,8 +412,8 @@
 
 
     <!-- Graphic Design -->
-    <section class="bg-[#121212] py-12">
-        <div class="container mx-auto px-4">
+    <section class="px-4 md:px-0 py-[20px] md:py-[148px] overflow-hidden">
+        <div class="container mx-auto">
             <div class="mb-6 md:mb-12 text-center">
                 <h3 class="text-orange-500 font-anton-sc uppercase text-[24px] mb-2">My Graphics Work</h3>
                 <h2 class="text-white text-[48px]">Designed Projects, Real Impact</h2>
@@ -456,103 +456,148 @@
     </section>
 
     <!-- Motion Design Works -->
-    <section class="text-[#FFF] py-12 md:py-16 px-4">
-        <div class="container mx-auto">
-            <div class="text-center mb-10">
-                <h3 class="text-[#FF7A3B] font-anton-sc uppercase text-[24px] mb-2">My Motion Works</h3>
-                <h2 class="text-4xl md:text-[48px] font-clash-grotesk-regular">Moving Brands with Motions</h2>
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md items-center justify-center p-4">
+        <div class="modal-animate w-full max-w-4xl bg-[#111] rounded-2xl overflow-hidden shadow-2xl">
+
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between px-5 py-3 bg-[#1a1a1a]">
+                <span id="modalTitle" class="text-white font-anton uppercase text-lg tracking-wide"></span>
+                <button id="modalClose" aria-label="Close modal"
+                    class="w-9 h-9 rounded-full bg-white/10 border border-white/20 text-white text-xl flex items-center justify-center hover:bg-brand/40 transition-colors duration-200 cursor-pointer">
+                    &#x2715;
+                </button>
             </div>
 
+            <!-- Video Wrapper 16:9 -->
+            <div class="relative w-full aspect-video">
+                <div id="modalVideoWrapper" class="absolute inset-0 w-full h-full"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Works -->
+    <section class="text-white py-12 md:py-16 px-4">
+        <div class="container mx-auto">
+
+            <!-- Heading -->
+            <div class="text-center mb-10">
+                <h3 class="text-[#FF7A3B] font-anton-sc uppercase text-[24px] mb-2">My Motion Works</h3>
+                <h2 class="text-4xl md:text-[48px]">Moving Brands with Motions</h2>
+            </div>
+
+            <!-- Grid -->
             <div class="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-4 h-auto md:h-[600px] relative">
 
-                <div class="hidden md:block absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-                    <a href="#"
-                        class="pointer-events-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-full w-35 h-35 flex flex-col items-center justify-center transition-all duration-300 hover:scale-110 group">
-                        <span class="text-[24px] font-anton-sc uppercase">→</span>
-                        <span class="text-[24px] font-anton-sc uppercase mt-1">See Work</span>
+                <!-- See Work Center Button -->
+                <div class="see-button absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+                    <a href="projects.html"
+                        class="pointer-events-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-full w-35 h-35 flex flex-col items-center justify-center transition-all duration-300 hover:scale-110">
+                        <span class="text-2xl font-anton uppercase">→</span>
+                        <span class="text-2xl font-anton uppercase mt-1">See Work</span>
                     </a>
                 </div>
 
+                <!-- Corporate Videos -->
                 <div class="md:col-span-6 md:row-span-1 relative overflow-hidden rounded-xl group bg-[#222]">
                     <img src="assets/images/motion-vdo-img1.png"
                         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-105"
                         alt="Corporate">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="relative p-6 h-full flex flex-col">
-                        <span class="text-[20px] md:text-[32px]">Corporate Videos</span>
+                        <span class="text-xl md:text-4xl">Corporate Videos</span>
                         <div class="mt-auto mb-auto flex justify-center">
-                            <div
-                                class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+                            <!-- <button
+                                class="play-btn w-15 h-15 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="assets/videos/corporate.mp4" data-title="Corporate Videos">
                                 <div
                                     class="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1">
                                 </div>
-                            </div>
+                            </button> -->
+                            <button
+                                class="play-btn w-15 h-15 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="https://www.youtube.com/watch?v=-EE0W5Lg738" data-title="Corporate Videos">
+                                <div
+                                    class="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-white border-b-[8px] border-b-transparent ml-1">
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>
 
+                <!-- Travel Videos -->
                 <div class="md:col-span-3 md:row-span-1 relative overflow-hidden rounded-xl group bg-purple-600">
                     <img src="assets/images/motion-vdo-img2.png"
                         class="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-500 group-hover:scale-105"
                         alt="Travel">
                     <div class="relative p-6 h-full flex flex-col">
-                        <span class="text-[20px] md:text-[32px]">Travel Videos</span>
+                        <span class="text-xl md:text-4xl">Travel Videos</span>
                         <div class="mt-auto mb-auto flex justify-center">
-                            <div class="w-10 h-10 rounded-full bg-white/30 flex items-center justify-center">
+                            <button
+                                class="play-btn w-15 h-15 rounded-full bg-white/30 backdrop-blur-sm border border-white/30 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="https://www.youtube.com/watch?v=-EE0W5Lg738" data-title="Travel Videos">
                                 <div
-                                    class="w-0 h-0 border-t-[5px] border-t-transparent border-l-[8px] border-l-white border-b-[5px] border-b-transparent ml-1">
+                                    class="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-white border-b-[8px] border-b-transparent ml-1">
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
 
+                <!-- 3D Motion Videos -->
                 <div class="md:col-span-3 md:row-span-2 relative overflow-hidden rounded-xl group bg-sky-600">
                     <img src="assets/images/motion-vdo-img3.png"
                         class="absolute inset-0 w-full h-full object-cover opacity-70 transition-transform duration-500 group-hover:scale-105"
                         alt="3D Motion">
                     <div class="relative p-6 h-full flex flex-col">
-                        <span class="text-[20px] md:text-[32px]">3D Motion Videos</span>
+                        <span class="text-xl md:text-4xl">3D Motion Videos</span>
                         <div class="mt-auto mb-auto flex justify-center">
-                            <div
-                                class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/40">
+                            <button
+                                class="play-btn w-15 h-15 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="https://www.youtube.com/watch?v=-EE0W5Lg738" data-title="3D Motion Videos">
                                 <div
                                     class="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-white border-b-[8px] border-b-transparent ml-1">
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
 
+                <!-- Social Ad Videos -->
                 <div class="md:col-span-4 md:row-span-1 relative overflow-hidden rounded-xl group bg-green-800">
                     <img src="assets/images/motion-vdo-img4.png"
                         class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-105"
                         alt="Social Ads">
                     <div class="relative p-6 h-full flex flex-col">
-                        <span class="text-[20px] md:text-[32px]">Social Ad Videos</span>
+                        <span class="text-xl md:text-4xl">Social Ad Videos</span>
                         <div class="mt-auto mb-auto flex justify-center">
-                            <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                            <button
+                                class="play-btn w-15 h-15 rounded-full bg-white/20 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="https://www.youtube.com/watch?v=-EE0W5Lg738" data-title="Social Ad Videos">
                                 <div
-                                    class="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1">
+                                    class="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-white border-b-[8px] border-b-transparent ml-1">
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
 
+                <!-- Product Videos -->
                 <div class="md:col-span-5 md:row-span-1 relative overflow-hidden rounded-xl group bg-zinc-800">
                     <img src="assets/images/motion-vdo-img5.png"
                         class="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-500 group-hover:scale-105"
                         alt="Product">
                     <div class="relative p-6 h-full flex flex-col">
-                        <span class="text-[20px] md:text-[32px]">Product Videos</span>
+                        <span class="text-xl md:text-4xl">Product Videos</span>
                         <div class="mt-auto mb-auto flex justify-center">
-                            <div
-                                class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border border-white/20">
+                            <button
+                                class="play-btn w-15 h-15 rounded-full bg-white/20 backdrop-blur-sm border border-white/20 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="https://www.youtube.com/watch?v=-EE0W5Lg738" data-title="Product Videos">
                                 <div
-                                    class="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1">
+                                    class="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-white border-b-[8px] border-b-transparent ml-1">
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -579,7 +624,7 @@
             <div class="group relative transition-all duration-500">
 
                 <div
-                    class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none border-t border-b border-white/25">
+                    class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border-t border-b border-white/25">
                 </div>
 
                 <div class="container mx-auto relative z-10 px-4 md:px-0 py-4 md:py-10">
@@ -606,7 +651,7 @@
 
             <div class="group relative transition-all duration-500">
 
-                <div class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none
+                <div class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none
         border-t border-b border-white/25">
                 </div>
 
@@ -634,7 +679,7 @@
 
             <div class="group relative transition-all duration-500">
 
-                <div class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none
+                <div class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none
         border-t border-b border-white/25">
                 </div>
 
@@ -662,7 +707,7 @@
 
             <div class="group relative transition-all duration-500">
 
-                <div class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none
+                <div class="creative-process absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none
         border-t border-b border-white/25">
                 </div>
 
@@ -694,244 +739,370 @@
 
     <!-- Client Feedback section -->
 
-    <section class="bg-[#0a0a0a] py-20 px-6 overflow-hidden">
-        <div class="container mx-auto mb-12 text-center">
-            <h2 class="text-[#FF7A3B] font-anton text-[20px] tracking-wider uppercase mb-4">Client Feedback</h2>
-            <p class="text-white text-[32px] md:text-[56px] font-light leading-tight tracking-tight">
+    <section class="py-20 px-6 overflow-hidden">
+        <div class="container mx-auto mb-[32px] md:mb-[64px] text-center">
+            <h2 class="text-[#FF7A3B] font-anton-sc text-[24px] uppercase mb-4">Client Feedback</h2>
+            <p class="text-white text-[32px] md:text-[48px]">
                 What clients say about working with me
             </p>
         </div>
-        <!-- First auto scroll section -->
-        <div class="splide" id="feedback-carousel">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide px-4">
-                        <div
-                            class="w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
-                            <div class="absolute -left-15 -top-2">
-                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
-                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
-                            </div>
-                            <div class="flex gap-1 mb-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                            </div>
-                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
-                                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
-                                social
-                                media content that significantly boosted our engagement."
-                            </p>
-                            <div class="mt-auto">
-                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
-                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
-                            </div>
-                        </div>
 
-                    </li>
-                    <li class="splide__slide px-4">
-                        <div
-                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
-                            <div class="absolute -left-15 -top-2">
-                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
-                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
-                            </div>
-                            <div class="flex gap-1 mb-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                            </div>
-                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
-                                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
-                                social
-                                media content that significantly boosted our engagement."
-                            </p>
-                            <div class="mt-auto">
-                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
-                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide px-4">
-                        <div
-                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
-                            <div class="absolute -left-15 -top-2">
-                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
-                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
-                            </div>
-                            <div class="flex gap-1 mb-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                            </div>
-                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
-                                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
-                                social
-                                media content that significantly boosted our engagement."
-                            </p>
-                            <div class="mt-auto">
-                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
-                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
-                            </div>
-                        </div>
+        <!-- Wrapper with left/right shadow overlays -->
+        <div class="relative">
 
-                    </li>
-                    <li class="splide__slide px-4">
-                        <div
-                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
-                            <div class="absolute -left-15 -top-2">
-                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
-                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
-                            </div>
-                            <div class="flex gap-1 mb-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                            </div>
-                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
-                                "Working with Sayed was a breeze. He understood our brand perfectly and created stunning
-                                social
-                                media content that significantly boosted our engagement."
-                            </p>
-                            <div class="mt-auto">
-                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen</h4>
-                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <!-- Left fade shadow -->
+            <div
+                class="absolute left-0 top-0 h-full w-[525px] bg-gradient-to-r from-[#111] to-transparent z-10 pointer-events-none">
             </div>
-        </div>
 
-        <!-- Second auto scroll section -->
-        <div class="splide pt-16" id="feedback-carousel2">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide px-4">
-                        <div
-                            class="w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
-                            <div class="absolute -left-15 -top-2">
-                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
-                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
-                            </div>
-                            <div class="flex gap-1 mb-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                            </div>
-                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
-                                "Working with Sayed was a breeze. He understood our brand perfectly and created
-                                stunning
-                                social
-                                media content that significantly boosted our engagement."
-                            </p>
-                            <div class="mt-auto">
-                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen
-                                </h4>
-                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li class="splide__slide px-4">
-                        <div
-                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
-                            <div class="absolute -left-15 -top-2">
-                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
-                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
-                            </div>
-                            <div class="flex gap-1 mb-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                            </div>
-                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
-                                "Working with Sayed was a breeze. He understood our brand perfectly and created
-                                stunning
-                                social
-                                media content that significantly boosted our engagement."
-                            </p>
-                            <div class="mt-auto">
-                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen
-                                </h4>
-                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide px-4">
-                        <div
-                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
-                            <div class="absolute -left-15 -top-2">
-                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
-                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
-                            </div>
-                            <div class="flex gap-1 mb-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                            </div>
-                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
-                                "Working with Sayed was a breeze. He understood our brand perfectly and created
-                                stunning
-                                social
-                                media content that significantly boosted our engagement."
-                            </p>
-                            <div class="mt-auto">
-                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen
-                                </h4>
-                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li class="splide__slide px-4">
-                        <div
-                            class="w-full md:min-w-[350px] max-w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
-                            <div class="absolute -left-15 -top-2">
-                                <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
-                                    class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
-                            </div>
-                            <div class="flex gap-1 mb-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                                <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
-                            </div>
-                            <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
-                                "Working with Sayed was a breeze. He understood our brand perfectly and created
-                                stunning
-                                social
-                                media content that significantly boosted our engagement."
-                            </p>
-                            <div class="mt-auto">
-                                <h4 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen
-                                </h4>
-                                <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <!-- Right fade shadow -->
+            <div
+                class="absolute right-0 top-0 h-full w-[525px] bg-gradient-to-l from-[#111] to-transparent z-10 pointer-events-none">
             </div>
-        </div>
+
+            <!-- First auto scroll section -->
+            <div class="splide" id="feedback-carousel">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- <li class="splide__slide px-4">
+                            <div
+                                class="w-[350px] bg-[#0a0a0a] border border-white/20 rounded-2xl p-8 flex flex-col relative">
+                                <div class="absolute -left-15 -top-1">
+                                    <img src="https://i.pravatar.cc/100?u=marcus" alt="Marcus"
+                                        class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                                </div>
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" alt="Star" class="w-4 h-4">
+                                </div>
+                                <p class="text-gray-300 text-[15px] leading-relaxed mb-8">
+                                    "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                    stunning
+                                    social media content that significantly boosted our engagement."
+                                </p>
+                                <div class="mt-auto">
+                                    <h3 class="text-white font-anton text-[16px] uppercase tracking-wide">Marcus Chen
+                                    </h3>
+                                    <p class="text-gray-500 text-[12px]">Marketing Director, FreshBrand</p>
+                                </div>
+                            </div>
+                        </li> -->
+
+
+                        <li class="splide__slide px-4 flex">
+
+                            <div
+                                class="w-[350px] border border-white/20 rounded-[0_20px_20px_20px] p-8 flex flex-col flex-1 relative">
+
+                                <div class="absolute -left-15 -top-1">
+                                    <img src="https://i.pravatar.cc/100?u=marcus"
+                                        class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                                </div>
+
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                </div>
+
+                                <p class="text-[#FFF] text-[16px] leading-relaxed mb-8">
+                                    "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                    stunning
+                                    social media content that significantly boosted our engagement."
+                                </p>
+
+                                <!-- 🔥 Always bottom -->
+                                <div class="mt-auto">
+                                    <h3 class="text-[#FFF] font-anton-sc text-[16px] uppercase">
+                                        Marcus Chen
+                                    </h3>
+                                    <p class="text-white/70 text-[14px]">
+                                        Marketing Director, FreshBrand
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="splide__slide px-4 flex">
+
+                            <div
+                                class="w-[350px] border border-white/20 rounded-[0_20px_20px_20px] p-8 flex flex-col flex-1 relative">
+
+                                <div class="absolute -left-15 -top-1">
+                                    <img src="https://i.pravatar.cc/100?u=marcus"
+                                        class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                                </div>
+
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                </div>
+
+                                <p class="text-[#FFF] text-[16px] leading-relaxed mb-8">
+                                    "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                    stunning
+                                    social media content that significantly boosted our engagement."
+                                </p>
+
+                                <!-- 🔥 Always bottom -->
+                                <div class="mt-auto">
+                                    <h3 class="text-[#FFF] font-anton-sc text-[16px] uppercase">
+                                        Marcus Chen
+                                    </h3>
+                                    <p class="text-white/70 text-[14px]">
+                                        Marketing Director, FreshBrand
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="splide__slide px-4 flex">
+
+                            <div
+                                class="w-[350px] border border-white/20 rounded-[0_20px_20px_20px] p-8 flex flex-col flex-1 relative">
+
+                                <div class="absolute -left-15 -top-1">
+                                    <img src="https://i.pravatar.cc/100?u=marcus"
+                                        class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                                </div>
+
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                </div>
+
+                                <p class="text-[#FFF] text-[16px] leading-relaxed mb-8">
+                                    "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                    stunning
+                                    social media content that significantly boosted our engagement."
+                                </p>
+
+                                <!-- 🔥 Always bottom -->
+                                <div class="mt-auto">
+                                    <h3 class="text-[#FFF] font-anton-sc text-[16px] uppercase">
+                                        Marcus Chen
+                                    </h3>
+                                    <p class="text-white/70 text-[14px]">
+                                        Marketing Director, FreshBrand
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="splide__slide px-4 flex">
+
+                            <div
+                                class="w-[350px] border border-white/20 rounded-[0_20px_20px_20px] p-8 flex flex-col flex-1 relative">
+
+                                <div class="absolute -left-15 -top-1">
+                                    <img src="https://i.pravatar.cc/100?u=marcus"
+                                        class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                                </div>
+
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                </div>
+
+                                <p class="text-[#FFF] text-[16px] leading-relaxed mb-8">
+                                    "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                    stunning
+                                    social media content that significantly boosted our engagement."
+                                </p>
+
+                                <!-- 🔥 Always bottom -->
+                                <div class="mt-auto">
+                                    <h3 class="text-[#FFF] font-anton-sc text-[16px] uppercase">
+                                        Marcus Chen
+                                    </h3>
+                                    <p class="text-white/70 text-[14px]">
+                                        Marketing Director, FreshBrand
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Second auto scroll section -->
+            <div class="splide pt-12" id="feedback-carousel2">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide px-4 flex">
+
+                            <div
+                                class="w-[350px] border border-white/20 rounded-[0_20px_20px_20px] p-8 flex flex-col flex-1 relative">
+
+                                <div class="absolute -left-15 -top-1">
+                                    <img src="https://i.pravatar.cc/100?u=marcus"
+                                        class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                                </div>
+
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                </div>
+
+                                <p class="text-[#FFF] text-[16px] leading-relaxed mb-8">
+                                    "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                    stunning
+                                    social media content that significantly boosted our engagement."
+                                </p>
+
+                                <!-- 🔥 Always bottom -->
+                                <div class="mt-auto">
+                                    <h3 class="text-[#FFF] font-anton-sc text-[16px] uppercase">
+                                        Marcus Chen
+                                    </h3>
+                                    <p class="text-white/70 text-[14px]">
+                                        Marketing Director, FreshBrand
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="splide__slide px-4 flex">
+
+                            <div
+                                class="w-[350px] border border-white/20 rounded-[0_20px_20px_20px] p-8 flex flex-col flex-1 relative">
+
+                                <div class="absolute -left-15 -top-1">
+                                    <img src="https://i.pravatar.cc/100?u=marcus"
+                                        class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                                </div>
+
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                </div>
+
+                                <p class="text-[#FFF] text-[16px] leading-relaxed mb-8">
+                                    "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                    stunning
+                                    social media content that significantly boosted our engagement."
+                                </p>
+
+                                <!-- 🔥 Always bottom -->
+                                <div class="mt-auto">
+                                    <h3 class="text-[#FFF] font-anton-sc text-[16px] uppercase">
+                                        Marcus Chen
+                                    </h3>
+                                    <p class="text-white/70 text-[14px]">
+                                        Marketing Director, FreshBrand
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="splide__slide px-4 flex">
+
+                            <div
+                                class="w-[350px] border border-white/20 rounded-[0_20px_20px_20px] p-8 flex flex-col flex-1 relative">
+
+                                <div class="absolute -left-15 -top-1">
+                                    <img src="https://i.pravatar.cc/100?u=marcus"
+                                        class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                                </div>
+
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                </div>
+
+                                <p class="text-[#FFF] text-[16px] leading-relaxed mb-8">
+                                    "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                    stunning
+                                    social media content that significantly boosted our engagement."
+                                </p>
+
+                                <!-- 🔥 Always bottom -->
+                                <div class="mt-auto">
+                                    <h3 class="text-[#FFF] font-anton-sc text-[16px] uppercase">
+                                        Marcus Chen
+                                    </h3>
+                                    <p class="text-white/70 text-[14px]">
+                                        Marketing Director, FreshBrand
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="splide__slide px-4 flex">
+
+                            <div
+                                class="w-[350px] border border-white/20 rounded-[0_20px_20px_20px] p-8 flex flex-col flex-1 relative">
+
+                                <div class="absolute -left-15 -top-1">
+                                    <img src="https://i.pravatar.cc/100?u=marcus"
+                                        class="w-12 h-12 rounded-full border-2 border-[#1a1a1a]">
+                                </div>
+
+                                <div class="flex gap-1 mb-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                    <img src="assets/images/feedback-star.svg" class="w-4 h-4">
+                                </div>
+
+                                <p class="text-[#FFF] text-[16px] leading-relaxed mb-8">
+                                    "Working with Sayed was a breeze. He understood our brand perfectly and created
+                                    stunning
+                                    social media content that significantly boosted our engagement."
+                                </p>
+
+                                <!-- 🔥 Always bottom -->
+                                <div class="mt-auto">
+                                    <h3 class="text-[#FFF] font-anton-sc text-[16px] uppercase">
+                                        Marcus Chen
+                                    </h3>
+                                    <p class="text-white/70 text-[14px]">
+                                        Marketing Director, FreshBrand
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div><!-- end relative wrapper -->
 
     </section>
-
-
 
 
 
@@ -941,17 +1112,18 @@
             <div
                 class="relative overflow-hidden rounded-4xl bg-[linear-gradient(180deg,#FF7A3B_0%,#381200_100%)] px-8 py-16 md:py-24 text-center shadow-2xl">
                 <div class="relative z-10 flex flex-col items-center">
-                    <h2 class="text-[20px] md:text-[64px] font-clash-grotesk-bold text-white mb-6">
+                    <h2
+                        class="text-[20px] md:text-[64px] font-clash-grotesk-bold text-white mb-[8px] md:mb-[16px] leading-tight">
                         Not limited to video,<br>
                         I'm your creative comrade.
                     </h2>
 
-                    <p class="text-gray-200 text-[14px] md:text-[40px] font-light mb-10 max-w-2xl mx-auto opacity-90">
+                    <p class="text-gray-200 text-[14px] md:text-[40px] font-light mb-[16px] md:mb-[48px] opacity-90">
                         Got questions, project ideas, or just want to say hi? I'm all ears!
                     </p>
 
                     <button
-                        class="group flex justify-center items-center gap-3 px-8 py-3 rounded-full text-white text-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95 bg-[linear-gradient(90deg,#ea8a46_0%,#2f7365_100%)] border-2 border-[#5a4b42] mx-auto">
+                        class="group cursor-pointer flex justify-center items-center gap-3 px-8 py-3 rounded-full text-white text-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-95 bg-[linear-gradient(90deg,#ea8a46_0%,#2f7365_100%)] border-2 border-[#5a4b42] mx-auto">
                         Get Started
                         <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none"
                             stroke="currentColor" viewBox="0 0 24 24">
@@ -969,7 +1141,7 @@
     </section>
 
 
-
+    <!-- Footer -->
     <footer class="footer-container">
         <div class="footer-content">
 

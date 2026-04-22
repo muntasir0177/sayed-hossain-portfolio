@@ -1777,3 +1777,806 @@ antony sc
 </body>
 
 </html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Works Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'anton': ['"Anton SC"', 'sans-serif'],
+                    },
+                    width: {
+                        '35': '8.75rem',
+                        '15': '3.75rem',
+                    },
+                    height: {
+                        '35': '8.75rem',
+                        '15': '3.75rem',
+                    },
+                    colors: {
+                        brand: '#FF7A3B',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <style>
+        @keyframes modalIn {
+            from {
+                opacity: 0;
+                transform: scale(0.92) translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .modal-animate {
+            animation: modalIn 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-md items-center justify-center p-4">
+        <div class="modal-animate w-full max-w-4xl bg-[#111] rounded-2xl overflow-hidden shadow-2xl">
+
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between px-5 py-3 bg-[#1a1a1a]">
+                <span id="modalTitle" class="text-white font-anton uppercase text-lg tracking-wide"></span>
+                <button id="modalClose" aria-label="Close modal"
+                    class="w-9 h-9 rounded-full bg-white/10 border border-white/20 text-white text-xl flex items-center justify-center hover:bg-brand/40 transition-colors duration-200 cursor-pointer">
+                    &#x2715;
+                </button>
+            </div>
+
+            <!-- Video Wrapper 16:9 -->
+            <div class="relative w-full aspect-video">
+                <div id="modalVideoWrapper" class="absolute inset-0 w-full h-full"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECTION -->
+    <section class="text-white py-12 md:py-16 px-4">
+        <div class="container mx-auto">
+
+            <!-- Heading -->
+            <div class="text-center mb-10">
+                <h3 class="text-brand font-anton uppercase text-2xl mb-2">My Motion Works</h3>
+                <h2 class="text-4xl md:text-5xl font-anton font-normal">Moving Brands with Motions</h2>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-4 h-auto md:h-[600px] relative">
+
+                <!-- See Work Center Button -->
+                <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+                    <a href="projects.html"
+                        class="pointer-events-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-full w-35 h-35 flex flex-col items-center justify-center transition-all duration-300 hover:scale-110">
+                        <span class="text-2xl font-anton uppercase">→</span>
+                        <span class="text-2xl font-anton uppercase mt-1">See Work</span>
+                    </a>
+                </div>
+
+                <!-- Corporate Videos -->
+                <div class="md:col-span-6 md:row-span-1 relative overflow-hidden rounded-xl group bg-[#222]">
+                    <img src="assets/images/motion-vdo-img1.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-105"
+                        alt="Corporate">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="relative p-6 h-full flex flex-col">
+                        <span class="text-xl md:text-4xl">Corporate Videos</span>
+                        <div class="mt-auto mb-auto flex justify-center">
+                            <button
+                                class="play-btn w-15 h-15 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="assets/videos/corporate.mp4" data-title="Corporate Videos">
+                                <div
+                                    class="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Videos -->
+                <div class="md:col-span-3 md:row-span-1 relative overflow-hidden rounded-xl group bg-purple-600">
+                    <img src="assets/images/motion-vdo-img2.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-500 group-hover:scale-105"
+                        alt="Travel">
+                    <div class="relative p-6 h-full flex flex-col">
+                        <span class="text-xl md:text-4xl">Travel Videos</span>
+                        <div class="mt-auto mb-auto flex justify-center">
+                            <button
+                                class="play-btn w-10 h-10 rounded-full bg-white/30 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="assets/videos/travel.mp4" data-title="Travel Videos">
+                                <div
+                                    class="w-0 h-0 border-t-[5px] border-t-transparent border-l-[8px] border-l-white border-b-[5px] border-b-transparent ml-1">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Motion Videos -->
+                <div class="md:col-span-3 md:row-span-2 relative overflow-hidden rounded-xl group bg-sky-600">
+                    <img src="assets/images/motion-vdo-img3.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-70 transition-transform duration-500 group-hover:scale-105"
+                        alt="3D Motion">
+                    <div class="relative p-6 h-full flex flex-col">
+                        <span class="text-xl md:text-4xl">3D Motion Videos</span>
+                        <div class="mt-auto mb-auto flex justify-center">
+                            <button
+                                class="play-btn w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="assets/videos/3d-motion.mp4" data-title="3D Motion Videos">
+                                <div
+                                    class="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-white border-b-[8px] border-b-transparent ml-1">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Ad Videos -->
+                <div class="md:col-span-4 md:row-span-1 relative overflow-hidden rounded-xl group bg-green-800">
+                    <img src="assets/images/motion-vdo-img4.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-105"
+                        alt="Social Ads">
+                    <div class="relative p-6 h-full flex flex-col">
+                        <span class="text-xl md:text-4xl">Social Ad Videos</span>
+                        <div class="mt-auto mb-auto flex justify-center">
+                            <button
+                                class="play-btn w-12 h-12 rounded-full bg-white/20 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="assets/videos/social-ads.mp4" data-title="Social Ad Videos">
+                                <div
+                                    class="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Videos -->
+                <div class="md:col-span-5 md:row-span-1 relative overflow-hidden rounded-xl group bg-zinc-800">
+                    <img src="assets/images/motion-vdo-img5.png"
+                        class="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-500 group-hover:scale-105"
+                        alt="Product">
+                    <div class="relative p-6 h-full flex flex-col">
+                        <span class="text-xl md:text-4xl">Product Videos</span>
+                        <div class="mt-auto mb-auto flex justify-center">
+                            <button
+                                class="play-btn w-12 h-12 rounded-full bg-white/20 border border-white/20 flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+                                data-video="assets/videos/product.mp4" data-title="Product Videos">
+                                <div
+                                    class="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const modal = document.getElementById('videoModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalWrapper = document.getElementById('modalVideoWrapper');
+        const modalClose = document.getElementById('modalClose');
+
+        function openVideoModal(btn) {
+            const src = btn.getAttribute('data-video');
+            const title = btn.getAttribute('data-title') || 'Video';
+
+            modalTitle.textContent = title;
+
+            let embedHTML = '';
+            if (src.includes('youtube.com') || src.includes('youtu.be')) {
+                const videoId = src.includes('youtu.be')
+                    ? src.split('youtu.be/')[1].split('?')[0]
+                    : new URL(src).searchParams.get('v');
+                embedHTML = `<iframe class="w-full h-full" src="https://www.youtube.com/embed/${videoId}?autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+            } else if (src.includes('vimeo.com')) {
+                const videoId = src.split('vimeo.com/')[1];
+                embedHTML = `<iframe class="w-full h-full" src="https://player.vimeo.com/video/${videoId}?autoplay=1" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+            } else {
+                embedHTML = `<video class="w-full h-full" src="${src}" controls autoplay playsinline></video>`;
+            }
+
+            modalWrapper.innerHTML = embedHTML;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeVideoModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            modalWrapper.innerHTML = '';
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        document.querySelectorAll('.play-btn').forEach(btn => {
+            btn.addEventListener('click', () => openVideoModal(btn));
+        });
+
+        modalClose.addEventListener('click', closeVideoModal);
+
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) closeVideoModal();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeVideoModal();
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-EE0W5Lg738?si=r-cfUXgmL5b6UuPA"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<!-- Video Section -->
+<div class="py-[16px] md:py-[80px] px-4 md:px-0">
+    <div class="container mx-auto">
+        <div class="justify-center mx-auto mb-12 overflow-hidden rounded-[20px] shadow-sm relative group md:p-0"
+            id="video-container">
+            <img src="assets/images/video-thumb.png" alt="Featured Project" class="w-full h-auto block"
+                id="video-thumbnail">
+
+            <button onclick="playVideo()"
+                class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all duration-300"
+                id="play-button">
+                <div
+                    class="w-full max-w-[45px] rounded-full flex items-center justify-center shadow-xl transform group-hover:scale-102 transition-transform cursor-pointer">
+                    <img class="w-full aspect-45/45" src="assets/images/home-img7.svg" alt="Play Icon">
+                </div>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+// new Splide("#feedback-carousel", {
+// type: "loop",
+// drag: "free",
+// focus: "center",
+// perPage: 3, // Adjust based on screen size
+// autoScroll: {
+// speed: 1,
+// },
+// breakpoints: {
+// 768: { perPage: 1 },
+// },
+// }).mount(window.splide.Extensions);
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+// var splide = new Splide("#feedback-carousel", {
+// type: "loop",
+// drag: "free",
+// focus: "center",
+// perPage: 5,
+// gap: "30px",
+// autoplay: true,
+// interval: 2000,
+// pauseOnHover: false,
+// arrows: false,
+// pagination: true,
+// breakpoints: {
+// 1024: {
+// perPage: 5,
+// },
+// 768: {
+// perPage: 1,
+// padding: "10%",
+// },
+// },
+// });
+// splide.mount();
+// });
+
+
+
+
+
+
+
+<!-- filter projects -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        anton: ['Anton', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#0a0a0a] font-inter">
+
+    <section class="px-4 md:px-0">
+        <div class="container mx-auto pt-20 text-center">
+
+            <!-- Header -->
+            <p class="text-[#FF7A3B] font-anton text-xs md:text-[24px] uppercase tracking-[0.2em] mb-4">
+                My Works
+            </p>
+            <h2 class="text-[28px] md:text-[32px] text-gray-400 leading-[1.15] max-w-4xl mx-auto mb-12">
+                A curated collection of UX projects focused on solving real user problems, improving product
+                performance.
+            </h2>
+
+            <!-- Filter Buttons -->
+            <div class="flex justify-center w-full mb-10">
+                <div
+                    class="flex items-center gap-3 overflow-x-auto pb-4 whitespace-nowrap [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+
+                    <a href="#" data-filter="all"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white bg-[#FF7A3B] border border-[#FF7A3B] transition-all duration-200">
+                        All Works
+                    </a>
+                    <a href="#" data-filter="motion"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white border border-white/30 hover:bg-[#FF7A3B] hover:border-[#FF7A3B] transition-all duration-200">
+                        Motion Graphics
+                    </a>
+                    <a href="#" data-filter="graphic"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white border border-white/30 hover:bg-[#FF7A3B] hover:border-[#FF7A3B] transition-all duration-200">
+                        Graphic Design
+                    </a>
+                    <a href="#" data-filter="explainer-app"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white border border-white/30 hover:bg-[#FF7A3B] hover:border-[#FF7A3B] transition-all duration-200">
+                        Explainer Video Apps
+                    </a>
+                    <a href="#" data-filter="explainer"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white border border-white/30 hover:bg-[#FF7A3B] hover:border-[#FF7A3B] transition-all duration-200">
+                        Explainer Video
+                    </a>
+                    <a href="#" data-filter="social"
+                        class="filter-btn px-3 md:px-5 py-1.5 md:py-2.5 text-[12px] md:text-[15px] font-medium rounded-full text-white border border-white/30 hover:bg-[#FF7A3B] hover:border-[#FF7A3B] transition-all duration-200">
+                        Social Media Video
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 py-5">
+
+                <!-- Motion Graphics 1 -->
+                <a href="#" data-category="motion" class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img1.png" alt="Tech Startup Explainer"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[14px] font-medium uppercase tracking-widest">Motion
+                        Graphics</p>
+                    <h3
+                        class="text-white text-[14px] md:text-[20px] font-bold uppercase tracking-wider leading-tight my-1">
+                        Tech Startup Explainer</h3>
+                    <p class="text-white/50 text-[11px] md:text-[14px] font-medium uppercase tracking-widest">(2026)</p>
+                </a>
+
+                <!-- Motion Graphics 2 -->
+                <a href="#" data-category="motion" class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img2.png" alt="Brand Animation"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[14px] font-medium uppercase tracking-widest">Motion
+                        Graphics</p>
+                    <h3
+                        class="text-white text-[14px] md:text-[20px] font-bold uppercase tracking-wider leading-tight my-1">
+                        Brand Animation Reel</h3>
+                    <p class="text-white/50 text-[11px] md:text-[14px] font-medium uppercase tracking-widest">(2026)</p>
+                </a>
+
+                <!-- Graphic Design 1 -->
+                <a href="#" data-category="graphic" class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img3.png" alt="Visual Identity"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[14px] font-medium uppercase tracking-widest">Graphic
+                        Design</p>
+                    <h3
+                        class="text-white text-[14px] md:text-[20px] font-bold uppercase tracking-wider leading-tight my-1">
+                        Visual Identity System</h3>
+                    <p class="text-white/50 text-[11px] md:text-[14px] font-medium uppercase tracking-widest">(2026)</p>
+                </a>
+
+                <!-- Graphic Design 2 -->
+                <a href="#" data-category="graphic" class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img4.png" alt="Poster Design"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[14px] font-medium uppercase tracking-widest">Graphic
+                        Design</p>
+                    <h3
+                        class="text-white text-[14px] md:text-[20px] font-bold uppercase tracking-wider leading-tight my-1">
+                        Poster Series Design</h3>
+                    <p class="text-white/50 text-[11px] md:text-[14px] font-medium uppercase tracking-widest">(2025)</p>
+                </a>
+
+                <!-- Explainer Video Apps -->
+                <a href="#" data-category="explainer-app"
+                    class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img5.png" alt="App Explainer"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[14px] font-medium uppercase tracking-widest">Explainer
+                        Video Apps</p>
+                    <h3
+                        class="text-white text-[14px] md:text-[20px] font-bold uppercase tracking-wider leading-tight my-1">
+                        FinTech App Explainer</h3>
+                    <p class="text-white/50 text-[11px] md:text-[14px] font-medium uppercase tracking-widest">(2026)</p>
+                </a>
+
+                <!-- Explainer Video -->
+                <a href="#" data-category="explainer"
+                    class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img6.png" alt="Product Explainer"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[14px] font-medium uppercase tracking-widest">Explainer
+                        Video</p>
+                    <h3
+                        class="text-white text-[14px] md:text-[20px] font-bold uppercase tracking-wider leading-tight my-1">
+                        Product Explainer Video</h3>
+                    <p class="text-white/50 text-[11px] md:text-[14px] font-medium uppercase tracking-widest">(2025)</p>
+                </a>
+
+                <!-- Social Media Video 1 -->
+                <a href="#" data-category="social" class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img7.png" alt="Instagram Reel"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[14px] font-medium uppercase tracking-widest">Social
+                        Media Video</p>
+                    <h3
+                        class="text-white text-[14px] md:text-[20px] font-bold uppercase tracking-wider leading-tight my-1">
+                        Instagram Reel Campaign</h3>
+                    <p class="text-white/50 text-[11px] md:text-[14px] font-medium uppercase tracking-widest">(2026)</p>
+                </a>
+
+                <!-- Social Media Video 2 -->
+                <a href="#" data-category="social" class="project-item group cursor-pointer overflow-hidden text-left">
+                    <div class="rounded-xl overflow-hidden mb-4">
+                        <img src="assets/images/project-img8.png" alt="TikTok Ad"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                    </div>
+                    <p class="text-[#FF7A3B] text-[11px] md:text-[14px] font-medium uppercase tracking-widest">Social
+                        Media Video</p>
+                    <h3
+                        class="text-white text-[14px] md:text-[20px] font-bold uppercase tracking-wider leading-tight my-1">
+                        TikTok Ad Series</h3>
+                    <p class="text-white/50 text-[11px] md:text-[14px] font-medium uppercase tracking-widest">(2025)</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const projectItems = document.querySelectorAll(".project-item");
+
+            filterButtons.forEach((button) => {
+                button.addEventListener("click", (e) => {
+                    e.preventDefault();
+
+                    // Remove active style from all buttons
+                    filterButtons.forEach((btn) => {
+                        btn.classList.remove("bg-[#FF7A3B]", "border-[#FF7A3B]");
+                        btn.classList.add("border-white/30");
+                    });
+
+                    // Add active style to clicked button
+                    button.classList.add("bg-[#FF7A3B]", "border-[#FF7A3B]");
+                    button.classList.remove("border-white/30");
+
+                    const filterValue = button.getAttribute("data-filter");
+
+                    projectItems.forEach((item) => {
+                        const category = item.getAttribute("data-category");
+                        const match = filterValue === "all" || category === filterValue;
+
+                        if (match) {
+                            item.classList.remove("hidden");
+                        } else {
+                            item.classList.add("hidden");
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* ── background ── */
+    .footer-bg {
+        background: url("assets/images/footer-bg.png") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    /* ── nav links desktop ── */
+    .footer-link {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: #d4d4d4;
+        text-decoration: none;
+        font-size: clamp(13px, 1.1vw, 16px);
+        transition: color 0.2s;
+    }
+
+    /* ── nav links mobile ── */
+    .footer-link-mobile {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: #d4d4d4;
+        text-decoration: none;
+        font-size: 15px;
+        transition: color 0.2s;
+    }
+
+    .footer-link:hover,
+    .footer-link-mobile:hover {
+        color: #ff6a00;
+    }
+</style>
+
+
+<footer class="footer-bg w-full overflow-hidden">
+    <div class="relative w-full">
+
+        <!-- ── DESKTOP (md and up) ── -->
+        <div class="hidden md:block relative">
+
+            <!-- Nav top-right -->
+            <nav class="absolute top-6 right-8 flex gap-8 z-20">
+                <a href="#" class="footer-link">Home</a>
+                <a href="#" class="footer-link">Projects</a>
+                <a href="#" class="footer-link">Services</a>
+                <a href="#" class="footer-link">Download CV</a>
+            </nav>
+        </div>
+
+    </div>
+</footer>
+
+
+
+<!-- <section class="bg-[#111] px-4 py-12 md:px-0">
+        <div class="container mx-auto">
+            <p class="text-[#FF7A3B] font-anton-sc text-[14px] md:text-[20px] uppercase mb-2 tracking-widest">
+                MOTION DESIGN
+            </p>
+            <h2 class="font-anton-sc text-[32px] md:text-[80px] text-[#FFF] leading-[1] mb-6 uppercase">
+                Nike Air Max Campaign
+            </h2>
+            <p class="text-white/70 text-[16px] md:text-[24px] mb-12 max-w-3xl leading-relaxed">
+                A dynamic brand motion campaign showcasing the revolutionary Air Max technology through fluid animations
+                and bold visual storytelling.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+
+                <div class="col-span-1 relative-separator">
+                    <h3 class="text-[#FF7A3B] font-clash-grotesk-medium text-[16px] md:text-[32px] mb-1">Motion Graphics
+                    </h3>
+                    <p class="text-[#FFF] text-[14px] md:text-[16px] uppercase tracking-wider opacity-80">Project Type
+                    </p>
+                </div>
+
+                <div class="col-span-1 relative-separator">
+                    <h3 class="text-[#FF7A3B] font-clash-grotesk-medium text-[16px] md:text-[32px] mb-1">2:45 Minutes
+                    </h3>
+                    <p class="text-[#FFF] text-[14px] md:text-[16px] uppercase tracking-wider opacity-80">Duration</p>
+                </div>
+
+                <div class="col-span-1 relative-separator">
+                    <h3 class="text-[#FF7A3B] font-clash-grotesk-medium text-[16px] md:text-[32px] mb-1">Social Media /
+                        Web</h3>
+                    <p class="text-[#FFF] text-[14px] md:text-[16px] uppercase tracking-wider opacity-80">Platform</p>
+                </div>
+
+                <div class="col-span-1 relative-separator">
+                    <h3 class="text-[#FF7A3B] font-clash-grotesk-medium text-[16px] md:text-[32px] mb-1">After Effects,
+                        C4D</h3>
+                    <p class="text-[#FFF] text-[14px] md:text-[16px] uppercase tracking-wider opacity-80">Tools Used</p>
+                </div>
+
+                <div class="col-span-1">
+                    <h3 class="text-[#FF7A3B] font-clash-grotesk-medium text-[16px] md:text-[32px] mb-1">2025</h3>
+                    <p class="text-[#FFF] text-[14px] md:text-[16px] uppercase tracking-wider opacity-80">Year</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <style>
+            /* CSS for the separator lines */
+            @media (min-width: 768px) {
+                .relative-separator {
+                    position: relative;
+                }
+
+                .relative-separator::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 50px;
+                    width: 2px;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        </style>
+    </section> -->
+
+
+
+
+<section class="bg-black text-white px-4 md:px-16 py-8 md:py-16">
+    <div class="container mx-auto">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div>
+                <h2 class="text-[#FF7A3B] font-anton-sc text-[16px] md:text-[24px] mb-4 uppercase tracking-wider">
+                    The Problem</h2>
+                <h3 class="text-[24px] font-clash-grotesk-semi-bold mb-4">The Brief</h3>
+                <p class="max-w-[700px] text-white/70 text-[24px] leading-relaxed">Nike needed a motion design
+                    campaign to
+                    showcase Air Max technology,
+                    highlighting innovation and comfort while aligning with their brand identity. The goal was to
+                    capture attention and create a lasting impression online.</p>
+            </div>
+            <div>
+                <h2 class="text-[#FF7A3B] font-anton-sc text-[16px] md:text-[24px] mb-4 uppercase tracking-wider">
+                    The Solution</h2>
+                <h3 class="text-[24px] font-clash-grotesk-semi-bold mb-4">My Proposed Solution</h3>
+                <p class="max-w-[700px] text-white/70 text-[24px] leading-relaxed">Nike launched a dynamic campaign
+                    showcasing Air
+                    Max technology. It featured
+                    eye-catching visuals and animations that highlighted the shoes' innovative features and comfort,
+                    while staying true to Nike's brand identity. Engaging storytelling and vibrant graphics captured
+                    the audience's attention across digital platforms.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 mb-12">
+
+            <!-- Before -->
+            <div class="flex flex-col gap-8">
+                <img src="assets/images/details-problem-img.png" alt="Before" class="w-full object-cover">
+
+                <span class="max-w-[90px] bg-[#E65E60] text-white px-4 py-2 rounded-full text-[16px] uppercase">
+                    Before
+                </span>
+
+                <p class="text-white/70 text-[24px]">
+                    Before the redesign, users faced an overwhelming and confusing property search experience, with
+                    too many unfiltered listings.
+                </p>
+            </div>
+
+            <!-- After -->
+            <div class="flex flex-col gap-8">
+                <img src="assets/images/details-solution-img.png" alt="After" class="w-full object-cover">
+
+                <span
+                    class="max-w-[90px] bg-[#00A919] text-white text-center px-4 py-2 rounded-full text-[16px] uppercase">
+                    After
+                </span>
+
+                <p class="text-white/70 text-[24px]">
+                    After implementing Propert Eye, the experience became streamlined and user-friendly, with smart
+                    filters, verified listings and transparent pricing.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="md:col-span-1 max-w-[555px] p-6">
+                <p class="text-[#E5E7EB] text-[20px] p-4 md:p-8 mb-4">"The attention to detail and storytelling in
+                    Sayed's
+                    motion
+                    graphics elevated our project beyond expectations. Timely and professional service."</p>
+                <div class="flex items-center gap-3">
+                    <div class="max-w-[64px]">
+                        <img src="assets/images/product-man.png" alt="Product Manager" class="w-full object-cover">
+                    </div>
+                    <div>
+                        <p class="font-anton-sc text-[#FFF] text-[20px]">Jared Lin</p>
+                        <p class="text-[#9CA3AF] text-[16px]">Product Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <h3 class="text-[24px] md:text-[64px] font-anton-sc text-white mb-[64px] uppercase">Results</h3>
+                <div class="grid grid-cols-3 gap-4">
+
+                    <div>
+                        <h4 class="text-[24px] md:text-[48px] font-clash-grotesk-bold text-[#FF7A3B]">2.4M+</h4>
+                        <p class="text-[14px] md:text-[16px] text-gray-400">Total Views</p>
+                    </div>
+                    <div>
+                        <h4 class="text-[24px] md:text-[48px] font-clash-grotesk-bold text-[#FF7A3B]">87%</h4>
+                        <p class="text-[14px] md:text-[16px] text-gray-400">Engagement Rate</p>
+                    </div>
+                    <div>
+                        <h4 class="text-[24px] md:text-[48px] font-clash-grotesk-bold text-[#FF7A3B]">15K+</h4>
+                        <p class="text-[14px] md:text-[16px] text-gray-400">Shares</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

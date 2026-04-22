@@ -187,12 +187,6 @@ body {
     background-size: cover;
 } */
 
-:root {
-    --bg-gradient: linear-gradient(180deg, #110c0a 0%, #3d1b02 100%);
-    --pill-bg: #1a1a1a;
-    --orange: #ff5f00;
-}
-
 .footer-container {
     width: 100%;
     padding: 100px 0;
@@ -213,7 +207,6 @@ body {
     align-items: center;
 }
 
-/* বড় টেক্সট স্টাইল */
 .hero-text {
     font-family: "Anton SC";
     font-size: 256px;
@@ -225,7 +218,6 @@ body {
     user-select: none;
 }
 
-/* সেই বাঁকানো কালো পিল/ক্যাপসুল */
 .design-pill {
     position: absolute;
     background: #111;
@@ -233,7 +225,6 @@ body {
     border-radius: 100px;
     border: 1px solid #333;
     transform: rotate(-11.278deg);
-    /* ছবির মতো বাঁকানো */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
     z-index: 10;
     display: flex;
@@ -249,7 +240,6 @@ body {
     text-transform: uppercase;
 }
 
-/* লিঙ্কগুলোর পজিশন (ডেক্সটপে উপরে ডানদিকে) */
 .footer-nav {
     position: absolute;
     top: -50px;
@@ -292,7 +282,7 @@ body {
     }
 
     .hero-text {
-        font-size: 80px;
+        font-size: 150px;
     }
 
     .design-pill {
@@ -364,3 +354,46 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: scale(0.92) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.modal-animate {
+    animation: modalIn 0.3s ease;
+}
+
+.see-button {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .see-button {
+        display: none;
+    }
+}
+
+/* CSS for the separator lines */
+/* @media (min-width: 768px) {
+    .relative-separator {
+        position: relative;
+    }
+
+    .relative-separator::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 50px;
+        width: 5px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+} */
