@@ -295,10 +295,17 @@
                         Got questions, project ideas, or just want to say hi? I'm all ears!
                     </p>
 
-                    <a href="#" class="border-2 border-[rgba(255,255,255,0.7)] rounded-full">
+                    <a href="#" class="group border-2 border-[rgba(255,255,255,0.7)] rounded-full overflow-hidden">
                         <span
-                            class="px-6 py-3 rounded-full bg-gradient-to-r from-[#e07820] via-[#c8961e] to-[#2a8060] border-2 border-[#272727] text-white text-[1.25rem] font-medium font-sans inline-flex items-center gap-[14px] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08),0_4px_24px_rgba(0,0,0,0.35)] cursor-pointer">
-                            See My Works <span class="font-light">
+                            class="relative px-6 py-3 rounded-full bg-gradient-to-r from-[#e07820] via-[#c8961e] to-[#2a8060] border-2 border-[#272727] text-white text-[1.25rem] font-medium inline-flex items-center gap-[14px] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08),0_4px_24px_rgba(0,0,0,0.35)]  group-hover:shadow-[0_10px_40px_rgba(224,120,32,0.35)]">
+
+                            <!-- Shine effect -->
+                            <span
+                                class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-white/10 skew-x-12"></span>
+
+                            See My Works
+
+                            <span>
                                 <img src="assets/images/arrow-icon.svg" alt="Arrow Right">
                             </span>
                         </span>
