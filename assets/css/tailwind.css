@@ -175,6 +175,47 @@ body {
         display: none !important;
     }
 }
+
+/* Hero section */
+/* .sub-title1 {
+    display: flex;
+}
+
+.video-card {
+    display: flex;
+} */
+
+.sub-title2 {
+    display: none;
+}
+.icon-group1 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .video-card {
+        display: none;
+    }
+    .sub-title1 {
+        display: none;
+    }
+    .sub-title2 {
+        display: flex;
+    }
+    .icon-group1 {
+        display: flex;
+        margin-left: 44px;
+        margin-bottom: -42px;
+        margin-top: -38px;
+    }
+    .icon-group2 {
+        display: none;
+    }
+    .white-space {
+        display: none;
+    }
+}
+
 /* About section */
 .glass-shine {
     position: absolute;
@@ -195,13 +236,13 @@ body {
 }
 
 .stat-card:nth-child(1) .glass-shine {
-    animation: glare 4s ease-in-out 2s infinite;
+    animation: glare 4s ease-in-out 1s infinite;
 }
 .stat-card:nth-child(2) .glass-shine {
-    animation: glare 4s ease-in-out 2.4s infinite;
+    animation: glare 4s ease-in-out 1.4s infinite;
 }
 .stat-card:nth-child(3) .glass-shine {
-    animation: glare 4s ease-in-out 2.8s infinite;
+    animation: glare 4s ease-in-out 1.8s infinite;
 }
 
 @keyframes glare {
@@ -277,6 +318,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    left: 337px;
+    top: 117px;
 }
 
 .pill-text {
@@ -308,6 +351,9 @@ body {
 
 /* --- Responsive (Mobile) --- */
 @media (max-width: 1024px) {
+    .footer-container {
+        padding: 24px 0;
+    }
     .hero-text {
         font-size: 100px;
     }
@@ -323,20 +369,17 @@ body {
 }
 
 @media (max-width: 768px) {
-    .footer-container {
-        height: 250px;
-        /* padding: 10px 0; */
-    }
-
     .hero-text {
-        font-size: 150px;
+        font-size: 58px;
     }
 
     .design-pill {
-        padding: 8px 16px;
+        padding: 8px 14px;
         transform: rotate(-10deg);
-        /* width: 150px; */
+        /* width: 140px; */
         font-size: 10px;
+        left: 83px;
+        top: 9px;
     }
 
     .pill-text {
@@ -345,7 +388,7 @@ body {
 
     .footer-nav {
         top: auto;
-        bottom: -80px;
+        bottom: -45px;
         right: auto;
         width: 100%;
         justify-content: center;
@@ -359,7 +402,7 @@ body {
         padding: 72px 0;
     }
     .hero-text {
-        font-size: 44px;
+        font-size: 58px;
         letter-spacing: -0.5px;
     }
     .footer-nav {
