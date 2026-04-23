@@ -70,7 +70,7 @@ body {
 
 .nav-container {
     max-width: 1142px;
-    background-color: rgba(54, 52, 52, 0.705);
+    background-color: rgba(43, 38, 38, 0.705);
     margin: 0 auto;
     padding: 12px;
     display: flex;
@@ -275,7 +275,7 @@ body {
 }
 
 /* About section */
-.glass-shine {
+/* .glass-shine {
     position: absolute;
     top: 0;
     left: -100%;
@@ -301,7 +301,7 @@ body {
 }
 .stat-card:nth-child(3) .glass-shine {
     animation: glare 4s ease-in-out 1.8s infinite;
-}
+} */
 
 @keyframes glare {
     0% {
